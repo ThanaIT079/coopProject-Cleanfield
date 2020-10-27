@@ -11,6 +11,7 @@ body, html{
      -ms-user-select: none;      /* IE 10+ */
      user-select: none;          /* Likely future */ 
 }
+
 /* Menubar */
 .Menu{
     /* top:30%; */
@@ -21,6 +22,7 @@ body, html{
     height: 65px;
     visibility: hidden;
     /* opacity: 0.5; */
+
 }
 .Menu ul{
     display: flex;
@@ -127,7 +129,7 @@ body, html{
 }
 #town{
     position: relative;
-    top: 80px;
+    top: 60px;
     /* top: 120px; */
     left: 10%;
     width: 824px;
