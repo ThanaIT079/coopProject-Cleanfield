@@ -11,7 +11,7 @@ body, html{
      -ms-user-select: none;      /* IE 10+ */
      user-select: none;          /* Likely future */ 
 }
-@media only screen and (max-width: 2048){
+@media only screen and (max-width: 1024){
     body, html{
         overflow-y: auto;
         overflow-x: hidden;
