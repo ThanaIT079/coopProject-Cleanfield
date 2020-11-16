@@ -4,21 +4,12 @@ body, html{
     overflow-x: hidden;
     font-family: 'Kanit', sans-serif;
     overflow-y: hidden;
-    
 
      /* css-tricks.com author by Chris Coyier */
      -webkit-user-select: none;  /* Chrome all / Safari all */
      -moz-user-select: none;     /* Firefox all */
      -ms-user-select: none;      /* IE 10+ */
      user-select: none;          /* Likely future */ 
-}
-
-@media only screen and (max-width: 2048){
-    body, html{
-        overflow-y: visible;
-        
-        
-    }
 }
 /* Menubar */
 .Menu{
@@ -30,7 +21,6 @@ body, html{
     height: 65px;
     visibility: hidden;
     /* opacity: 0.5; */
-
 }
 .Menu ul{
     display: flex;
@@ -100,7 +90,6 @@ body, html{
     width: 300px;
     height: auto;
     left: 15%;
-    background-color: blue;
 }
 #hpct2{
     position: absolute;
@@ -155,7 +144,7 @@ body, html{
     padding-top: 10px;
     cursor: pointer;
 }
-#wind{
+/* #wind{
     top: 400px;
     left: 150px;
     background-color: greenyellow;
@@ -184,14 +173,17 @@ body, html{
     top: 300px;
     left: 500px;
     background-color: rgb(44, 158, 224);
-}
+} */
 
 /* Power Infor */
 .detialP{
     z-index: 1;
     position: absolute;
-    top: -10px;
-    left: -10px;
+    /* top: -10px;
+    left: -10px; */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     width: 844px;
     height: 620px;
     background-color: rgb(242, 240, 231);
