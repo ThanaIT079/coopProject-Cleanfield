@@ -2,6 +2,7 @@ let boxEl1;
 let boxEl2;
 let villagebg;
 let clickCount = 4;
+let checkfirsttime = 1; // don't forget set it to 0 when you finnish all testing css
 let powers = ['windInFor', 'waterInFor', 'solarInFor', 'bioInFor', 'refInFor', 'how2'];
 function openEl(x) {
     clickCount = 1;
@@ -17,13 +18,21 @@ function openEl(x) {
             document.getElementById('box1-1').style.animation = "fadeInR 1.5s linear";
             document.getElementById('box1-2').style.animation = "fadeInR 1.5s linear";
             document.getElementById('picG1').style.visibility = "visible";
-            document.getElementById('windInFor').scrollTop = 0+"px";
+            document.getElementById('windInFor').scrollTop = 0 + "px";
             if (x == 0) {
 
                 document.getElementById('box0').style.visibility = "visible";
-            } 
-            for(let f = 2; f < 10; f++){
-                document.getElementById('box1-'+f).style.visibility = "hidden";
+            }
+            for (let f = 2; f < 10; f++) {
+                document.getElementById('box1-' + f).style.visibility = "hidden";
+            }
+            break;
+        /* Case 1 - 3 wind > water > solar > bio */
+
+
+        case 5:
+            if (checkfirsttime == 0) {
+                checkfirsttime = 1;
             }
             break;
     }
@@ -33,7 +42,11 @@ function openEl(x) {
 
 function closeEl() {
     clickCount++;
-
+    if (checkfirsttime == 1) {
+        document.getElementById('village').style.animation = 'fadeShow 3s linear';
+        checkfirsttime = 2;
+    }
+    
     boxEl1.style.animation = "clElAni .2s linear";
     setTimeout(() => {
         boxEl1.style.visibility = "hidden";
@@ -56,6 +69,10 @@ function closeEl() {
                 document.getElementById('box1-' + bx).style.animation = "";
             }
         }
+        if (allPowerOn == 4){ // when you close the 4th clean power pop up ref & setting will showup automatic
+            applyPower(4);
+        }
+        
     }, 190); //Delay For animation < animation = smooth
 
     // if (clickCount > 2) {   

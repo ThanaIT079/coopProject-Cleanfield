@@ -20,7 +20,7 @@
 
 </head>
 
-<body>
+<body onload="onStartpage()">
     <!-- Homepage -->
     <div id="homepage">
         <div id="hplogo"></div>
@@ -96,13 +96,14 @@
                 <p class="cftxt2">พลังงานน้ำ</p>
             </div>
             <div id="cfbtn" class="btn" onclick="nextContent(1)">
-                <p class="cftxt5">เข้าสู่หมู่บ้าน!</p>
+                <p class="cftxt5">เข้าสู่หมู่บ้าน</p>
             </div>
         </div>
     </div>
 
+    <!-- Village Show all content -->
     <div id="village">
-        <div id="btnhow2" class="btn" onclick="openEl(5)">
+        <div id="btnhow21" class="btn" onclick="openEl(5)">
             <p class="how2w">How To</p>
         </div>
 
@@ -115,22 +116,112 @@
         <div id="bio"></div>
         <div id="ref"></div>
 
-        <!-- Button : Press to open Popup -->
-        <div id="btnwind" class="btn" onclick="openEl(0)">
+        <!-- Button : Press to open Popup  func. openEl here-->
+        <div id="btnwind" class="btn" onclick="applyPower(0); openEl(0)">
             <p class="btnvill1">พลังงานลม</p>
         </div>
-        <div id="btnwater" class="btn">
+        <div id="btnwater" class="btn" onclick="applyPower(1);">
             <p class="btnvill1">พลังงานน้ำ</p>
         </div>
-        <div id="btnsolar" class="btn">
+        <div id="btnsolar" class="btn" onclick="applyPower(2);">
             <p class="btnvill3">พลังงานเเสงอาทิตย์</p>
         </div>
-        <div id="btnbio" class="btn">
+        <div id="btnbio" class="btn" onclick="applyPower(3);">
             <p class="btnvill2">พลังงานชีวมวล</p>
         </div>
-        
 
-        <!-- Information Prototype-->
+        <!-- How to play-->
+        <div id="how2" class="detialPh2">
+            <div id="closehow2" class="btn" onclick="closeEl()"></div>
+            <div id="cthow2_1">
+                <p class="ch2txt1">วิธีสร้างเเหล่ง</p>
+            </div>
+            <div id="cthow2_2">
+                <p class="ch2txt1">พลังงานธรรมชาติ</p>
+            </div>
+            <div id="cthow2_31"></div>
+            <p class="ch2tx t3">เลือกพลังงานที่</p>
+            <p class="ch2tx t4">ที่ต้องการจะเรียนรู้</p>
+
+            <div id="cthow2_41"></div>
+            <p class="ch2tx t5">เรียนรู้พลังงาน</p>
+            <p class="ch2tx t6">ต่าง ๆ จนจบ</p>
+
+            <div id="cthow2_51"></div>
+            <p class="ch2tx t7">กดปุ่ม</p>
+            <p class="ch2tx t8">เรียนรู้สำเร็จ</p>
+
+            <div id="cthow2_61"></div>
+            <p class="ch2tx t9">กลับมาที่หน้าหมู่บ้าน</p>
+            <p class="ch2tx t10">เเละกดเรียนรู้พลังงาน</p>
+            <p class="ch2tx t11">อื่นต่อได้</p>
+
+            <div id="btnhow22" class="btn" onclick="closeEl()">
+                <p class="cftxt5">เข้าสู่หมู่บ้าน</p>
+            </div>
+            <div class="freespace"></div>
+            <div id="leaf1"></div>
+            <div id="leaf2"></div>
+            <div id="leaf3"></div>
+        </div>
+
+        <!-- Ref > Show after setting all clean power (automatic) -->
+        <div id="refInFor" class="detialPref">
+            <!-- <div id="closehow2" class="btn" onclick="closeEl()"></div> -->
+            <div id="refimg1_windmill"></div>
+            <div id="refimg2_leaf"></div>
+            <div id="refimg3_light"></div>
+            <div id="ctref1_1">
+                <p class="ch2txt1">ติดตั้ง</p>
+            </div>
+            <div id="ctref1_2">
+                <p class="ch2txt1">พลังงานสะอาด</p>
+            </div>
+            <div id="ctref2_1">
+                <p class="ch2txt6">สำหรับหมู่บ้านที่ผลิตไฟฟ้ามากกว่า 200กิโลวัตต์ขึ้นไป
+                    ต้องติดต่อกรมพัฒนาพลังงานทดเเทนเเละอนุรักษ์พลังงานเเละทำการขอใบอนุญาต
+                </p>
+            </div>
+            <div id="ctref2_90daybanner"></div>
+            <div id="ctref3_1"></div>
+            <div id="ctref3_12"></div>
+            <div id="ctref3_2"></div>
+            <div id="ctref3_22"></div>
+            <div id="ctref3_3"></div>
+            <div id="ctref3_32"></div>
+            <div id="ctref3_4"></div>
+            <div id="ctref3_42"></div>
+
+            <div id="ctref4_1">
+                <p class="ch2txt6">ยื่นเอกสารให้กับกรม<br>
+                    พัฒนาพลังงานทดเเทน<br>
+                    เเละอนุรักษ์พลังงาน
+                </p>
+            </div>
+            <div id="ctref4_2">
+                <p class="ch2txt6">เจ้าหน้าที่ตรวจ<br>
+                    สอบเอกสาร<br>
+                </p>
+            </div>
+            <div id="ctref4_3">
+                <p class="ch2txt6">เจ้าหน้าที่เข้า<br>
+                    ตรวจสอบเเละ<br>
+                    จัดทำรายงาน
+                </p>
+            </div>
+            <div id="ctref4_4">
+                <p class="ch2txt6">ออกใบอนุญาต<br>
+                    การใช้งาน<br>
+                </p>
+            </div>
+
+            <div id="btnref" class="btn" onclick="closeEl(); gotostart()">
+                <p class="cftxt5">กลับสู่จุดเริ่มต้น</p>
+            </div>
+            <div class="freespace2"></div>
+        </div>
+
+        <!-- Information Prototype -->
         <div id="windInFor" class="detialP" onclick="closeEl()" onscroll="showEL1(0);">
             <img src="image/wind-bg.png" alt="">
             <div id="box1-1" class="boxText">
@@ -200,15 +291,10 @@
             </div>
         </div>
 
-        <div id="how2" class="detialPh2">
-            <div id="closehow2" class="btn" onclick="closeEl()"></div>
-            <div id="cthow2_1">
-                <p class="ch2txt1">วิธีสร้างเเหล่ง</p>
-            </div>
-            <div id="cthow2_2">
-                <p class="ch2txt1">พลังงานธรรมชาติ</p>
-            </div>
-        </div>
+
+
+
+
         <div id="checkdiv" onclick="closeEl()"></div>
     </div>
 
@@ -228,23 +314,65 @@
                 setTimeout(function () { document.getElementById('cleanfield').style.display = 'none'; }, 500);
                 location.href = '#village';
                 document.getElementById('village').style.display = 'block';
+                openEl(5);
                 document.getElementById('village').style.overflowY = 'hidden'
-                document.getElementById('village').style.animation = 'fadeShow 5s linear';
                 break;
         }
     }
 
+    function gotostart() {
+        document.getElementById('village').style.animation = 'fadeOff 2s linear';
+        setTimeout(function () { location.reload(); }, 2000);
+
+    }
+
+    function onStartpage(){
+        document.getElementById('homepage').style.animation = 'fadeShow 2s linear';
+        setTimeout(function () { document.getElementById('homepage').style.opacity = 1; }, 1800);
+    }
+
+    let windP = 0;
+    let waterP = 0;
+    let bioP = 0;
+    let solarP = 0;
+    let allPowerOn = 0;
     function applyPower(a) {
         switch (a) {
             case 0: // wind
+                if (windP == 0) {
+                    document.getElementById('wind').style.backgroundImage = "url('img/002village/wind1.gif')";
+                    windP = 1;
+                    allPowerOn += 1;
+                }
                 break;
-            case 1: // wind
+            case 1: // water
+                if (waterP == 0) {
+                    document.getElementById('water').style.backgroundImage = "url('img/002village/water1.png')";
+                    waterP = 1;
+                    allPowerOn += 1;
+                }
                 break;
-            case 2: // wind
+            case 2: // solar
+                if (solarP == 0) {
+                    document.getElementById('solar').style.backgroundImage = "url('img/002village/solar1.png')";
+                    solarP = 1;
+                    allPowerOn += 1;
+                }
                 break;
-            case 3: // wind
+            case 3: // bio
+                if (bioP == 0) {
+                    document.getElementById('bio').style.backgroundImage = "url('img/002village/bio1.png')";
+                    bioP = 1;
+                    allPowerOn += 1;
+                }
+                break;
+            case 4:
+                openEl(4);
+                allPowerOn = 0;
+
                 break;
         }
+
     }
 
 </script>

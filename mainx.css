@@ -29,6 +29,7 @@ p{
     height: 100vh;
     background-image: url('img/000home/homebg.png');
     background-size:100% 100%;
+    opacity: 0;
 }
 #hplogo{
     position: absolute;
@@ -141,6 +142,7 @@ p{
     left: 15.2%;
     /* background-color: rgba(0, 128, 0, 0.421); */
 }
+
 #cf14_sun{
     position: absolute;
     /* width: 424px;
@@ -321,12 +323,8 @@ p{
     background-size:100% 100%;
     left: 50%;
     top: 80%;
-    transform: translate(-50%, -85%);
+    transform: translate(-48%, -85%);
 }
-
-
-
-
 
 /* Village */
 @keyframes fadeShow{
@@ -340,7 +338,18 @@ p{
         opacity: 1;
     }
 }
-#btnhow2{
+@keyframes fadeOff{ 
+    0%{transform:translateY(0px);
+        opacity: 1;
+    }
+    25%{transform:translateY(-15px);
+        opacity: 0;
+    }
+    100%{transform:translateY(-20px);
+        opacity: 0;
+    }
+}
+#btnhow21{
     position: absolute;
     width: 8vw; 
     height: 5vh;
@@ -540,7 +549,7 @@ p{
     transform: translate(-50%, -50%);
     width: 100%;
     height: 100vh;
-    background-color: rgb(242, 240, 231);
+    background-color: #D2E9D3;
     opacity: 1;
     visibility: hidden;
     overflow-y: auto;
@@ -567,7 +576,7 @@ p{
     position: absolute;
     /* width: 380px;
     height: 70px; */
-    width: 28vw;
+    width: 26vw;
     left: 50%;
     top: 10%;
     transform: translate(-50%, -10%);
@@ -578,9 +587,297 @@ p{
     height: 70px; */
     width: 34vw;
     height: 9vh;
-    /* background-image: url('img/002village/solar612_114.png');
-    background-size:100% 100%; */
     left: 50%;
     top: 19%;
     transform: translate(-50%, -19%);
+}
+#cthow2_31, #cthow2_41, #cthow2_51, #cthow2_61{
+    position: absolute;
+    /* width: 380px;
+    height: 70px; */
+    width: 18vw;
+    height: 18vw;
+    background-size:100% 100%;
+}
+#cthow2_31{
+    background-image: url('img/003how2/how2_1.png');
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+}
+#cthow2_41{
+    background-image: url('img/003how2/how2_2.png');
+    left: 50%;
+    top: 110%;
+    transform: translate(-50%, -50%);
+}
+#cthow2_51{
+    background-image: url('img/003how2/how2_3.png');
+    left: 50%;
+    top: 160%;
+    transform: translate(-50%, -50%);
+}
+#cthow2_61{
+    background-image: url('img/003how2/how2_4.png');
+    left: 50%;
+    top: 210%;
+    transform: translate(-50%, -50%);
+}
+#btnhow22{
+    position: absolute;
+    /* width: 460px;
+    height: 140px; */
+    width: 24vw;
+    height: 8vw;
+    background-image: url('img/000home/hpbtn1.png');
+    background-size:100% 100%;
+    top: 250%;
+    left: 50%;
+    transform: translate(-48%);
+}
+
+.ch2tx{
+    position: absolute;
+    font-size: 1.3vw;
+    color: #35A869;
+    left: 50%;
+    transform: translate(-50%);
+}
+.t3{
+    top: 80%;
+}
+.t4{
+    top: 84%;
+}
+.t5{
+    top: 130%;
+}
+.t6{
+    top: 134%;
+}
+.t7{
+    top: 180%;
+}
+.t8{
+    top: 184%;
+}
+.t9{
+    top: 230%;
+}
+.t10{
+    top: 234%;
+}
+.t11{
+    top: 238%;
+}
+/* Leaf */
+#leaf1, #leaf2, #leaf3 {
+    position: absolute;
+    background-image: url('img/003how2/how2leaf.png');
+    background-size:100% 100%;
+}   
+#leaf1{
+    top: 45%;
+    left: 65%;
+    width: 110px;
+    height: 110px;
+}
+#leaf2{
+    top: 230%;
+    left: 65%;
+    width: 110px;
+    height: 110px;
+}
+#leaf3{
+    top: 140%;
+    left: 20%;
+    width: 140px;
+    height: 140px;
+    transform: scaleX(-1);
+}
+
+.freespace{
+    position: absolute;
+    width: 100%;
+    height: 10vh;
+    top: 270%;
+}
+
+/* Ref & Setting */
+.detialPref{
+    z-index: 1;
+    position: absolute;
+    /* top: -10px;
+    left: -10px; */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100vh;
+    background-color: #F3F0E7;
+    opacity: 1;
+    visibility: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.detialPref::-webkit-scrollbar {
+    width: 0px;
+}
+#btnref{
+    position: absolute;
+    /* width: 460px;
+    height: 140px; */
+    width: 28.5vw;
+    height: 6.5vw;
+    background-image: url('img/002village/bio484_114.png');
+    background-size:100% 100%;
+    top: 140%;
+    left: 48%;
+    transform: translate(-48%);
+}
+.freespace2{
+    position: absolute;
+    width: 100%;
+    height: 10vh;
+    top: 150%;
+}
+#ctref1_1{
+    position: absolute;
+    /* width: 590px;
+    height: 264px; */
+    width: 12vw;
+    height: 6vw;
+    top: 20%;
+    left: 15%;
+    /* background-color: rgba(0, 128, 0, 0.421); */
+}
+#ctref1_2{
+    position: absolute;
+    /* width: 590px;
+    height: 264px; */
+    width: 28vw;
+    height: 6vw;
+    top: 29%;
+    left: 15%;
+    /* background-color: rgba(0, 128, 0, 0.421); */
+}
+#ctref2_1{
+    position: absolute;
+    /* width: 590px;
+    height: 264px; */
+    width: 33vw;
+    height: 8vw;
+    top: 42%;
+    left: 15%;
+    /* background-color: rgba(0, 128, 0, 0.421); */
+}
+#ctref2_90daybanner{
+    position: absolute;
+    background-image: url('img/008ref_set/90days.png');
+    background-size:100% 100%;
+    /* width: 336px;
+    height: 413px; */
+    width: 14vw;
+    height: 18vw;
+    top: 18%;
+    left: 63%;
+}
+#ctref3_1, #ctref3_2, #ctref3_3, #ctref3_4{
+    position: absolute;
+    background-size:100% 100%;
+    width: 10vw;
+    height: 14vw;
+    top: 75%;
+}
+#ctref3_1{
+    background-image: url('img/008ref_set/reficon1.png');
+    left: 20%;
+}
+#ctref3_2{
+    background-image: url('img/008ref_set/reficon2.png');
+    left: 36%;
+}
+#ctref3_3{
+    background-image: url('img/008ref_set/reficon2.png');
+    left: 52%;
+}
+#ctref3_4{
+    background-image: url('img/008ref_set/reficon2.png');
+    left: 68%;
+}
+.ch2txt6{
+    font-size: 1.7vw;;
+}
+#ctref4_1, #ctref4_2, #ctref4_3, #ctref4_4{
+    position: absolute;
+    text-align: center;
+    top: 110%;
+}
+#ctref4_1{
+    left: 17%;
+}
+#ctref4_2{
+    left: 36%;
+}
+#ctref4_3{
+    left: 52%;
+}
+#ctref4_4{
+    left: 68.5%;
+}
+#ctref3_12, #ctref3_22, #ctref3_32, #ctref3_42{
+    position: absolute;
+    background-size:100% 100%;
+    top: 65%;
+    background-color: orange;
+    /* width: 50px;
+    height: 50px; */
+    width: 2.8vw;
+    height: 2.8vw;
+}
+#ctref3_12{
+    background-image: url('');
+    left: 23.6%;
+}
+#ctref3_22{
+    background-image: url('');
+    left: 39.5%;
+}
+#ctref3_32{
+    background-image: url('');
+    left: 55.5%;
+}
+#ctref3_42{
+    background-image: url('');
+    left: 71.5%;
+}
+#refimg1_windmill{
+    position: absolute;
+    background-image: url('img/004wind/windmill.png');
+    background-size:100% 100%;
+    width: 27vw;
+    height: 22vw;
+    top: 5%;
+    left: 35%;
+    transform: translate(-5%, -35%);
+}
+#refimg2_leaf{
+    position: absolute;
+    background-image: url('img/004wind/leaf2.png');
+    background-size:100% 100%;
+    width: 10vw;
+    height: 14vw;
+    top: 145%;
+    left: 95%;
+    transform: translate(-145%, -95%);
+}
+#refimg3_light{
+    position: absolute;
+    background-image: url('img/008ref_set/lightbulb.png');
+    background-size:100% 100%;
+    width: 30vw;
+    height: 30vw;
+    top: 85%;
+    left: 12%;
+    transform: translate(-85%, -12%);
 }
