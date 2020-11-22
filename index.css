@@ -1,9 +1,10 @@
 body, html{
     margin: 0;
     scroll-behavior: smooth;
-    overflow-x: hidden;
+    /* overflow-y: hidden;
+    overflow-x: hidden; */
     font-family: 'Kanit', sans-serif;
-    overflow-y: hidden;
+    
 
      /* css-tricks.com author by Chris Coyier */
      -webkit-user-select: none;  /* Chrome all / Safari all */
@@ -205,6 +206,7 @@ body, html{
     background-color: black;
     opacity: 0;
     visibility: hidden;
+    /* display: none; */
 }
 
 @keyframes opElAni{

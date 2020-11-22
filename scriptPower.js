@@ -1,7 +1,8 @@
 let boxEl1;
 let boxEl2;
+let villagebg;
 let clickCount = 4;
-let powers = ['windInFor', 'waterInFor', 'solarInFor', 'bioInFor', 'refInFor'];
+let powers = ['windInFor', 'waterInFor', 'solarInFor', 'bioInFor', 'refInFor', 'how2'];
 function openEl(x) {
     clickCount = 1;
     boxEl1 = document.getElementById(powers[x]);
@@ -9,24 +10,30 @@ function openEl(x) {
     boxEl2 = document.getElementById('checkdiv');
     boxEl1.style.animation = "opElAni .25s linear";
     boxEl2.style.visibility = "visible";
-    console.log(clickCount + " this 1");
-    document.getElementById('box1-1').style.animation = "fadeInR 1.5s linear";
-    document.getElementById('box1-2').style.animation = "fadeInR 1.5s linear";
-    document.getElementById('picG1').style.visibility = "visible";
-    document.getElementById('windInFor').scrollTop = 0+"px";
-    // if (x == 0) {
-    //     
-    //     document.getElementById('box0').style.visibility = "visible";
-    // } 
-    // for(let f = 2; f < 10; f++){
-    //     document.getElementById('box1-'+f).style.visibility = "hidden";
-    // }
+
+    switch (x) {
+        case 0:
+            console.log(clickCount + " this 1");
+            document.getElementById('box1-1').style.animation = "fadeInR 1.5s linear";
+            document.getElementById('box1-2').style.animation = "fadeInR 1.5s linear";
+            document.getElementById('picG1').style.visibility = "visible";
+            document.getElementById('windInFor').scrollTop = 0+"px";
+            if (x == 0) {
+
+                document.getElementById('box0').style.visibility = "visible";
+            } 
+            for(let f = 2; f < 10; f++){
+                document.getElementById('box1-'+f).style.visibility = "hidden";
+            }
+            break;
+    }
+
 }
 
 
 function closeEl() {
     clickCount++;
-    
+
     boxEl1.style.animation = "clElAni .2s linear";
     setTimeout(() => {
         boxEl1.style.visibility = "hidden";

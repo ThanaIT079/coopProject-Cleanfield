@@ -340,6 +340,19 @@ p{
         opacity: 1;
     }
 }
+#btnhow2{
+    position: absolute;
+    width: 8vw; 
+    height: 5vh;
+    top: 10px;
+    right: 0px;
+}
+.how2w{
+    font-size: 1.8vw;
+    color: rgb(255, 132, 0);
+    text-decoration: underline;
+}
+
 #village{
     position: relative;
     width: 100%;
@@ -369,97 +382,112 @@ p{
     background-image: url('img/002village/waterflow2.gif');
     background-size:100% 100%;
     left: 15%;
-    top: 80%;
+    top: 82%;
     transform: translate(-30%, -30%);
 }
 
-
 #wind{
     position: absolute;
-    /* width: 475px;
-    height: 420px; */
-    width: 275px;
-    height: 220px;
-    left: 12%;
-    top: 22%;
-    transform: translate(-12%, -22%);
+    /* width: 275px;
+    height: 220px; */
+    width: 20vw;
+    height: 28vh;
+    left: 10%;
+    top: 25%;
+    transform: translate(-10%, -25%);
     background-image: url('img/002village/wind0.png');
-    /* background-image: url('img/002village/wind1.png'); */
     background-size:100% 100%;
 }
 #water{
     position: absolute;
-    /* width: 475px;
-    height: 420px; */
-    width: 270px;
-    height: 180px;
-    left: 6%;
+    /* width: 270px;
+    height: 180px; */
+    width: 25vw;
+    height: 25vh;
+    left: 5%;
     top: 90%;
-    transform: translate(-6%, -90%);
+    transform: translate(-5%, -90%);
     background-image: url('img/002village/water0.png');
     /* background-image: url('img/002village/water1.png'); */
     background-size:100% 100%;
 }
 #bio{
     position: absolute;
-    /* width: 475px;
-    height: 420px; */
-    width: 150px;
-    height: 200px;
-    left: 53%;
-    top: 75%;
-    transform: translate(-53%, -75%);
+    /* width: 150px;
+    height: 200px; */
+    width: 15vw;
+    height: 26vh;
+    left: 54%;
+    top: 73%;
+    transform: translate(-54%, -73%);
     background-image: url('img/002village/bio0.png');
     /* background-image: url('img/002village/bio1.png'); */
     background-size:100% 100%;
 }
 #solar{
     position: absolute;
-    /* width: 475px;
-    height: 420px; */
-    width: 308px;
-    height: 137px;
-    left: 96%;
+    /* width: 308px;
+    height: 137px; */
+    width: 20vw;
+    height: 15vh;
+    left: 97%;
     top: 36%;
-    transform: translate(-96%, -36%);
+    transform: translate(-97%, -36%);
     background-image: url('img/002village/solar0.png');
     /* background-image: url('img/002village/solar1.png'); */
     background-size:100% 100%;
 }
-.btnvill{
+#ref{
     position: absolute;
-    font-size: 35px;
+    /* width: 266px;
+    height: 242px; */
+    width: 14vw;
+    height: 21vh;
+    left: 55%;
+    top: 35%;
+    transform: translate(-97%, -35%);
+    background-image: url('img/002village/factory.png');
+    /* background-image: url('img/002village/solar1.png'); */
+    background-size:100% 100%;
+}
+
+
+.btnvill1{
+    position: absolute;
+    font-size: 2.8vw;
     padding: 0;
     margin: 0;
-    left: 25%;
-    top: 54%;
-    transform: translate(-10%, -50%);
+    left: 30%;
+    top: 53%;
+    transform: translate(-20%, -53%);
     color: white;
 }
 .btnvill2{
     position: absolute;
-    font-size: 35px;
+    font-size: 2.8vw;
     padding: 0;
     margin: 0;
     left: 20%;
-    top: 54%;
+    top: 50%;
     transform: translate(-8%, -50%);
     color: white;
 }
 .btnvill3{
     position: absolute;
-    font-size: 35px;
+    font-size: 2.8vw;
     padding: 0;
     margin: 0;
-    left: 15%;
-    top: 54%;
+    left: 12%;
+    top: 50%;
     transform: translate(-4%, -50%);
     color: white;
 }
 #btnwater{
     position: absolute;
-    width: 250px;
-    height: 70px;
+    /* width: 250px;
+    height: 70px; */
+    width: 20vw;
+    height: 9vh;
     background-image: url('img/002village/water_wind388_114.png');
     background-size:100% 100%;
     left: 10%;
@@ -468,8 +496,8 @@ p{
 }
 #btnwind{
     position: absolute;
-    width: 250px;
-    height: 70px;
+    width: 20vw;
+    height: 9vh;
     background-image: url('img/002village/water_wind388_114.png');
     background-size:100% 100%;
     left: 20%;
@@ -478,8 +506,10 @@ p{
 }
 #btnbio{
     position: absolute;
-    width: 300px;
-    height: 70px;
+    /* width: 300px;
+    height: 70px; */
+    width: 25vw;
+    height: 9vh;
     background-image: url('img/002village/bio484_114.png');
     background-size:100% 100%;
     left: 53%;
@@ -488,11 +518,69 @@ p{
 }
 #btnsolar{
     position: absolute;
-    width: 380px;
-    height: 70px;
+    /* width: 380px;
+    height: 70px; */
+    width: 28vw;
+    height: 9vh;
     background-image: url('img/002village/solar612_114.png');
     background-size:100% 100%;
     left: 90%;
     top: 20%;
     transform: translate(-85%, -30%);
+}
+
+/* How to Popup */
+.detialPh2{
+    z-index: 1;
+    position: absolute;
+    /* top: -10px;
+    left: -10px; */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(242, 240, 231);
+    opacity: 1;
+    visibility: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.detialPh2::-webkit-scrollbar {
+    width: 0px;
+}
+#closehow2{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    /* background-color: rgba(255, 0, 0, 0.50); */
+    background-image: url('img/003how2/closebtn.png');
+    background-size:100% 100%;
+    top: 2%;
+    right: 2%;
+}
+.ch2txt1{
+    font-size: 4.5vw;
+    color: #35A869;
+}
+#cthow2_1{
+    position: absolute;
+    /* width: 380px;
+    height: 70px; */
+    width: 28vw;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%, -10%);
+}
+#cthow2_2{
+    position: absolute;
+    /* width: 380px;
+    height: 70px; */
+    width: 34vw;
+    height: 9vh;
+    /* background-image: url('img/002village/solar612_114.png');
+    background-size:100% 100%; */
+    left: 50%;
+    top: 19%;
+    transform: translate(-50%, -19%);
 }
