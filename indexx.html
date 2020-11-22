@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="mainx.css">
+    <!-- <link rel="stylesheet" href="index.css"> -->
+
+    <link rel="shortcut icon" href="img/000home/web-icon.png" />
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Mitr&display=swap" rel="stylesheet"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="https://jabont.com/jayss/jayss2.css"> -->
+    <script src="scriptPower.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+
+    <title>Clean field</title>
+
+</head>
+
+<body>
+    <!-- Homepage -->
+    <div id="homepage">
+        <div id="hplogo"></div>
+        <div id="cthp1">
+            <p>เริ่มต้นเรียนรู้พลังงานต่าง ๆ</p>
+            <p>หมู่บ้านของ Clean Field ไปพร้อม ๆ กัน</p>
+        </div>
+        <div id="cthp2" class="btn">
+            <p class="btnhp" onclick="nextContent(0)">เริ่มเรียนรู้!</p>
+        </div>
+    </div>
+
+    <!-- Clean Field -->
+    <div id="cleanfield" class="cf">
+        <div id="ctcf1">
+            <div id="cf11">
+                <p class="cftxt1">ยินดีต้อนรับ</p>
+            </div>
+            <div id="cf12">
+                <p class="cftxt1">เข้าสู่หมู่บ้าน</p>
+            </div>
+
+            <div id="cf13">
+                <p class="cftxt2">
+                    ทุ่งหญ้ากว้างใหญ่ พื้นที่ติดทะเล เเม่น้ำไหลผ่าน กลางหมู่บ้าน บรรยากาศที่ดี
+                    เเต่ยังไม่พร้อมที่จะตั้งหมู่บ้านได้
+                    เพราะยังไม่มีพลังงานติดตั้งเเละเรียนรู้พลังงานต่าง ๆ ที่เราเลือกใช้ในหมู่บ้านกัน
+                </p>
+            </div>
+            <div id="cf14_sun"></div>
+            <div id="cf15_windmill"></div>
+        </div>
+
+        <div id="ctcf2">
+            <div id="cf21">
+                <p class="cftxt3">เราเลือกใช้</p>
+            </div>
+            <div id="cf22">
+                <p class="cftxt1">พลังงานสะอาด </p>
+            </div>
+            <div id="cf23">
+                <p class="cftxt2">คือ พลังงานที่ได้รับมาจากธรรมชาติเป็นหลัก
+                    จะช่วยรักษาสภาพเเวดล้อมเเละบรรยากาศไม่ให้
+                    ถูกทำลายด้วยเเนวคิด "ธรรมชาติจะไม่ทำร้าย
+                    ธรรมชาติด้วยกันเอง"
+                </p>
+            </div>
+        </div>
+        <div id="ctcf3">
+            <div id="cf31">
+                <p class="cftxt4">ประเภทของพลังงานที่เลือกนำมาใช้</p>
+            </div>
+            <div id="cf32_wind"></div>
+            <div id="cf32_solar"></div>
+            <div id="cf32_bio"></div>
+            <div id="cf32_water"></div>
+            <div id="cf33">
+                <p class="cftxt2">พลังงานลม</p>
+            </div>
+            <div id="cf341">
+                <p class="cftxt2">พลังงาน</p>
+            </div>
+            <div id="cf342">
+                <p class="cftxt2">เเสงอาทิตย์</p>
+            </div>
+            <div id="cf351">
+                <p class="cftxt2">พลังงาน</p>
+            </div>
+            <div id="cf352">
+                <p class="cftxt2">ชีวมวล</p>
+            </div>
+            <div id="cf36">
+                <p class="cftxt2">พลังงานน้ำ</p>
+            </div>
+            <div id="cfbtn" class="btn" onclick="nextContent(1)">
+                <p class="cftxt5">เข้าสู่หมู่บ้าน!</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="village">
+        <div id="vill_waterflow1"></div>
+        <div id="vill_waterflow2"></div>
+    </div>
+
+
+
+</body>
+<script>
+    function nextContent(x) {
+        switch (x) {
+            case 0:
+                location.href = '#cleanfield';
+                document.getElementById('cleanfield').style.display = 'block';
+                setTimeout(function () { document.getElementById('homepage').style.display = 'none'; }, 1000);
+                break;
+            case 1:
+                setTimeout(function () { document.getElementById('cleanfield').style.display = 'none'; }, 500);
+                location.href = '#village';
+                document.getElementById('village').style.display = 'block';
+                // document.getElementById('village').style.animation = 'fadeShow 5s linear';
+                break;
+        }
+    }
+</script>
+
+</html>

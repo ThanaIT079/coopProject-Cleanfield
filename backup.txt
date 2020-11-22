@@ -1,0 +1,127 @@
+<div id="village">
+        <div id="wind"></div>
+        <div id="water"></div>
+        <div id="solar"></div>
+        <div id="bio" onclick="applyPower(3)"></div>
+        <div id="btnwater" class="btn" onclick="applyPower(1)">
+            <p class="btnvill">พลังงานน้ำ</p>
+        </div>
+        <div id="btnwind" class="btn" onclick="openEl(0)">
+            <p class="btnvill">พลังงานลม</p>
+        </div>
+        <div id="btnbio" class="btn" onclick="applyPower(2)">
+            <p class="btnvill2">พลังงานชีวมวล</p>
+        </div>
+        <div id="btnsolar" class="btn" onclick="applyPower(3)">
+            <p class="btnvill3">พลังงานเเสงอาทิตย์</p>
+        </div>
+
+        <!-- Information Prototype-->
+        <div id="windInFor" class="detialP" onclick="closeEl()" onscroll="showEL1(0);">
+            <img src="image/wind-bg.png" alt="">
+            <div id="box1-1" class="boxText">
+                <h1>พลังงานลม</h1>
+                <h4>วิ่งรับลม หมุนพลังงาน</h4>
+            </div>
+            <div id="box1-2" class="boxText">
+                <p>ลมทะเลพัดเข้ามา บนภูเขาสูงลมก็พัดไป<br>
+                    ลมที่พัดเข้ากังหันอันใหญ่ ถูกส่งต่อสู่<br>
+                    กังหันพัดลมในบ้านเรา</p>
+            </div>
+            <div id="box1-3" class="boxHead">
+                <h1>&emsp;&emsp;&emsp;ลมที่พัด<br>กลายเป็นพลังที่ให้...</h1>
+            </div>
+            <div id="box1-4">
+                <div id="box1-4-1">
+                    <img src="image/lightbulb.gif" alt="">
+                    <p>เครื่องใช้ไฟฟ้าต่าง ๆ<br>
+                        ในครัวเรือน</p>
+                </div>
+                <div id="box1-4-2">
+                    <img src="image/seed.gif" alt="">
+                    <p>เครื่องสีเมล็ดธัญพืช<br>
+                        สำหรับเกษตรกร</p>
+                </div>
+                <div id="box1-4-3">
+                    <img src="image/waterturbine.gif" alt="">
+                    <p>เครื่องปั๊มน้ำสำหรับ<br>
+                        ใช้ในบ้านและการเกษตร</p>
+                </div>
+            </div>
+            <div id="box1-5" class="boxHead">
+                <h1>กังหันลม</h1>
+            </div>
+            <div id="box1-6">
+                <img src="image/1.png" alt="">
+                <div>
+                    <h4 class="head2Topic">ริมหาด<br>แหลมพรหมเทพ</h4>
+                    <p>จังหวัดภูเก็ต ไฟฟ้าที่ผลิตได้นำ<br>
+                        มาใช้ให้แสงสว่างในรอบบริเวณ<br>
+                        สถานีทดลองแหลมพรหมเทพ</p>
+                </div>
+            </div>
+            <div id="box1-7">
+                <img src="image/2.png" alt="">
+                <div>
+                    <h4 class="head2Topic">&emsp;&emsp;&emsp;&emsp;&emsp;เขาลำตะคอง</h4>
+                    <p>&emsp;จังหวัดนครรราชสีมา เป็น<br>
+                        กังหันลมที่มีศักยภาพที่สุดใน<br>
+                        ประเทศไทย สามารถทดแทน<br>
+                        เชื้อเพลิงถึง 1.1ล้านลิตรต่อปี</p>
+                </div>
+            </div>
+            <div id="box1-8">
+                <h2>พลังงานลมถูกเรียนรู้แล้ว<br>
+                    นำไปพัฒนาหมู่บ้าน ติดตั้งได้เลย!</h2>
+            </div>
+            <div id="box1-9" onclick="applyPower(0)">
+                <img id="box1-9-1" src="image/BTN.png" alt="">
+            </div>
+            <div id="picG1">
+                <img src="image/windmill.gif" alt="">
+            </div>
+            <div id="picG2">
+            </div>
+            <div id="picG3">
+            </div>
+        </div>
+
+        <div id="waterInFor" class="detialP" onclick="closeEl()">
+
+        </div>
+
+        <div id="solarInFor" class="detialP" onclick="closeEl()">
+
+        </div>
+
+        <div id="bioInFor" class="detialP" onclick="closeEl()">
+
+        </div>
+
+        <div id="refInFor" class="detialP" onclick="closeEl()">
+
+        </div>
+
+
+        <div id="checkdiv" onclick="closeEl()"></div>
+    </div>
+
+
+
+
+    function applyPower(x) {
+        switch (x) {
+            case 0:
+                document.getElementById('wind').style.backgroundImage = "url('img/002village/wind1.png')";
+                break;
+            case 1:
+                document.getElementById('water').style.backgroundImage = "url('img/002village/water1.png')";
+                break;
+            case 2:
+                document.getElementById('bio').style.backgroundImage = "url('img/002village/bio1.png')";
+                break;
+            case 3:
+                document.getElementById('solar').style.backgroundImage = "url('img/002village/solar1.png')";
+                break;
+        }
+    }
