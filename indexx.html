@@ -111,23 +111,24 @@
         <div id="vill_waterflow1"></div>
         <div id="vill_waterflow2"></div>
 
+        <div id="ref"></div>
         <div id="wind"></div>
         <div id="water"></div>
         <div id="solar"></div>
         <div id="bio"></div>
-        <div id="ref"></div>
+
 
         <!-- Button : Press to open Popup  func. openEl here-->
-        <div id="btnwind" class="btn" onclick="applyPower(0); openEl(0)">
+        <div id="btnwind" class="btn" onclick="openEl(0);">
             <p class="btnvill1">พลังงานลม</p>
         </div>
-        <div id="btnwater" class="btn" onclick="applyPower(1); openEl(1)">
+        <div id="btnwater" class="btn" onclick="openEl(1);">
             <p class="btnvill1">พลังงานน้ำ</p>
         </div>
-        <div id="btnsolar" class="btn" onclick="applyPower(2); openEl(2)">
+        <div id="btnsolar" class="btn" onclick="openEl(2);">
             <p class="btnvill3">พลังงานเเสงอาทิตย์</p>
         </div>
-        <div id="btnbio" class="btn" onclick="applyPower(3); openEl(3)">
+        <div id="btnbio" class="btn" onclick="openEl(3);">
             <p class="btnvill2">พลังงานชีวมวล</p>
         </div>
 
@@ -309,12 +310,12 @@
             </div>
             <div id="box2-5">
                 <p>
-                ต่อให้ผ่านกังหันน้ำ เขื่อน หรือ คลื่น<br>
-                ที่ซัดเข้าหาดก็ยังคงเป็นน้ำอยู่วันยันค่ำ<br>
-                แถมยังให้พลังงานกลับมาอีกด้วย<br>
-                เพียงทุกบ้าน หรือทุกหมู่บ้าน<br>
-                ติดตั้งกังหันน้ำก็จะมีไฟฟ้าในการ<br>
-                หุงข้าวเปิดพัดลมให้แสงสว่าง</p>
+                    ต่อให้ผ่านกังหันน้ำ เขื่อน หรือ คลื่น<br>
+                    ที่ซัดเข้าหาดก็ยังคงเป็นน้ำอยู่วันยันค่ำ<br>
+                    แถมยังให้พลังงานกลับมาอีกด้วย<br>
+                    เพียงทุกบ้าน หรือทุกหมู่บ้าน<br>
+                    ติดตั้งกังหันน้ำก็จะมีไฟฟ้าในการ<br>
+                    หุงข้าวเปิดพัดลมให้แสงสว่าง</p>
 
             </div>
             <div id="box2-6" class="boxHead">
@@ -329,10 +330,10 @@
                 </div>
                 <div id="box2-7-2">
                     <p>
-                    เลือกใช้กังหันน้ำขนาดเล็กพิเศษไว้ในบ้าน<br>
-                    ทำให้ชาวบ้านใช้ไฟฟ้าโดยไม่สร้างมลพิษ<br>
-                    และได้ชื่อว่าเป็นหมู่บ้านที่มีอากาศบริสุทธิ์<br>
-                    ที่สุดในเมืองไทย</p>
+                        เลือกใช้กังหันน้ำขนาดเล็กพิเศษไว้ในบ้าน<br>
+                        ทำให้ชาวบ้านใช้ไฟฟ้าโดยไม่สร้างมลพิษ<br>
+                        และได้ชื่อว่าเป็นหมู่บ้านที่มีอากาศบริสุทธิ์<br>
+                        ที่สุดในเมืองไทย</p>
                 </div>
             </div>
 
@@ -344,10 +345,10 @@
                 </div>
                 <div id="box2-8-2">
                     <p>
-                    ได้เห็นต้นแบบของกังหันน้ำคีรีวง<br>
-                    และยังนำไปต่อยอดโดยการใช้เป็น<br>
-                    แรงสูบน้ำฉีดน้ำให้พืชผลและยัง<br>
-                    เหลือไว้ใช้ในครัวเรือนอีกด้วย</p>
+                        ได้เห็นต้นแบบของกังหันน้ำคีรีวง<br>
+                        และยังนำไปต่อยอดโดยการใช้เป็น<br>
+                        แรงสูบน้ำฉีดน้ำให้พืชผลและยัง<br>
+                        เหลือไว้ใช้ในครัวเรือนอีกด้วย</p>
                 </div>
             </div>
 
@@ -376,6 +377,206 @@
 
         <div id="bioInFor" class="detialP" onclick="closeEl()" onscroll="showEL1(3);">
             <img src="image/bio/bg12.png" alt="">
+
+            <div id="box4-1" class="boxText">
+                <h1>พลังงาน</h1>
+            </div>
+
+            <div id="box4-2" class="boxText">
+                <h1>ชีวมวล</h1>
+            </div>
+
+            <div id="box4-3" class="boxText">
+                อาหารมีค่า<br>
+                กินเหลือก็สร้างพลังงานได้<br>
+            </div>
+
+            <div id="box4-4" class="boxText">
+                <p>เป็นพลังงานที่ได้จากอินทรีย์สาร<br>
+                    ไม่ว่าจะเป็นพืช สัตว์ เศษขยะที่เหลือจาก<br>
+                    การเกษตรทุกสิ่งที่ดูไม่มีค่าต้องกำจัดทิ้ง<br>
+                    ก็กลับกลายเป็นของมีค่าอีกครั้ง</p>
+            </div>
+
+            <div id="box4-5" class="boxHead">
+                <h1>ขยะรักษ์โลก</h1>
+            </div>
+
+            <div id="box4-6" class="boxText">
+                <p>
+                    พืชผลทางการเกษตรเมื่อนำไปขายเราไม่สามารถ<br>
+                    ขายได้ทุกส่วนจึงเกิดเป็นขยะทางการเกษตรจำนวน<br>
+                    มากที่เกษตรกรต้องจัดการแต่เราสามารถทำขยะ<br>
+                    เพื่อลดต้นทุนได้</p>
+            </div>
+
+            
+            <div id="box4-7">
+                <img src="img/007bio/biobar1.png" alt="">
+                <div id="box4-7-1">
+                    <h4>แกลบข้าว<br>1 ตัน</h4>
+                </div>
+                <div id="box4-7-2">
+                    <p>
+                        สีเปลือกออก<br>
+                        ใช้พลังงาน<br>
+                        30-60 กิโลวัตต์</p>
+                </div>
+                <div id="box4-7-3">
+                    <p>
+                        แกลบที่เหลือ<br>
+                        ผลิตไฟฟ้าได้ถึง<br>
+                        <red>90-125 กิโลวัตต์</red></p>
+                </div>
+            </div>
+
+            <div id="box4-8">
+                <img src="img/007bio/biobar2.png" alt="">
+                <div id="box4-8-1">
+                    <h4>กากอ้อย<br>1 ตัน</h4>
+                </div>
+                <div id="box4-8-2">
+                    <p>
+                        นำไปทำน้ำตาล<br>
+                        ใช้พลังงาน<br>
+                        25-30 กิโลวัตต์</p>
+                </div>
+                <div id="box4-8-3">
+                    <p>
+                        กากอ้อยที่เหลือ<br>
+                        ผลิตไฟฟ้าได้ถึง<br>
+                        <red>100 กิโลวัตต์</red></p>
+                </div>
+            </div>
+
+            <div id="box4-9">
+                <img src="img/007bio/biobar3.png" alt="">
+                <div id="box4-9-1">
+                    <h4>เศษเปลือก/<br>
+                        ทะลาย/กะลาปาล์ม<br>
+                        1 ตัน</h4>
+                </div>
+                <div id="box4-9-2">
+                    <p>
+                        แปรรูปเป็นน้ำมัน<br>
+                        ใช้พลังงาน<br>
+                        20-25 กิโลวัตต์</p>
+                </div>
+                <div id="box4-9-3">
+                    <p>
+                        เศษปาล์มที่เหลือ<br>
+                        ผลิตไฟฟ้าได้ถึง<br>
+                        <red>120 กิโลวัตต์</red></p>
+                </div>
+            </div>
+
+            <div id="box4-10">
+                <img src="img/007bio/biobar4.png" alt="">
+                <div id="box4-10-1">
+                    <h4>เศษไม้/<br>
+                        1 ลูกบากศ์เมตร</h4>
+                </div>
+                <div id="box4-10-2">
+                    <p>
+                        ผ่านกระบวนการแปรรูป<br>
+                        ใช้พลังงาน<br>
+                        35-45 กิโลวัตต์</p>
+                </div>
+                <div id="box4-10-3">
+                    <p>
+                        เศษไม้ที่เหลือ<br>
+                        ผลิตไฟฟ้าได้ถึง<br>
+                        <red>80 กิโลวัตต์</red></p>
+                </div>
+            </div>
+            
+            <div id="box4-11" class="boxHead">
+                <h1>ผลิตภัณฑ์สร้างแสงสว่าง</h1>
+            </div>
+
+            <div id="box4-12">
+                <h4>หมู่บ้านครบุรี<br>
+                    จังหวัดนครราชสีมา</h4>
+            </div>
+
+            <div id="box4-13">
+                โรงไฟฟ้าชีวมวลชุมชนใช้แกลบไม้<br>
+                ที่เหลือจากในชุมชนมาทำเป็น<br>
+                พลังงานไฟฟ้าในหมู่บ้าน 
+            </div>
+
+            <div id="box4-14">
+                <h4>หมู่บ้าน<br>
+                    บ้านเกาะกลาง จ.กระบี่</h4>
+            </div>
+
+            <div id="box4-15">
+                อุตสาหกรรมผลิตข้าวชุมชนแบบ<br>
+                ไร้ของเสีย นำของเสียที่มาจาก<br>
+                การเกษตรเช่น ฟางข้าว แกลบข้าว<br>
+                มาทำเป็นไฟฟ้า และยังนำเศษที่เหลือ<br>
+                มาผสมเป็นอาหารให้สัตว์ได้อีกด้วย
+            </div>
+
+            
+            <div id="box4-16">
+                <h2>พลังงานชีวมวลถูกเรียนรู้แล้ว<br>
+                    นำไปพัฒนาหมู่บ้าน ติดตั้งได้เลย!</h2>
+            </div>
+            
+            <div id="box4-17" onclick="applyPower(3)">
+                <img id="box2-10-1" src="image/BTN.png" alt="">
+            </div>
+
+            <div class="freespacebio"></div>
+
+            <div id="picG1-4">
+                <img src="img/001intro/bioicon.png" alt="">
+            </div>
+
+            <div id="picG2-4">
+                <img src="img/007bio/cane.png" alt="">
+            </div>
+
+            <div id="picG3-4">
+                <img src="img/007bio/rice.png" alt="">
+            </div>
+
+            <div id="picG4-4">
+                <img src="img/007bio/wood.png" alt="">
+            </div>
+
+            <div id="picG5-4">
+                <img src="img/007bio/corn-01.png" alt="">
+            </div>
+
+            <div id="picG6-4">
+                <img src="img/007bio/stove.png" alt="">
+            </div>
+
+            <!-- Big image -->
+            <div id="picG7-4">
+                <img src="img/007bio/rice.png" alt="">
+            </div>
+
+            <div id="picG8-4">
+                <img src="img/007bio/cane.png" alt="">
+            </div>
+            <div id="picG9-4">
+                <img src="img/007bio/cane.png" alt="">
+            </div>
+
+            <div id="picG10-4">
+                <img src="img/007bio/corn-01.png" alt="">
+            </div>
+
+            <div id="picG11-4">
+                <img src="img/007bio/bio1.png" alt="">
+            </div>
+
+            <div id="picG12-4">
+                <img src="img/007bio/bio2.png" alt="">
+            </div>
         </div>
 
         <div id="checkdiv" onclick="closeEl()"></div>
@@ -445,7 +646,11 @@
                 break;
             case 3: // bio
                 if (bioP == 0) {
-                    document.getElementById('bio').style.backgroundImage = "url('img/002village/bio1.png')";
+                    document.getElementById('bio').style.backgroundImage = "url('img/002village/bio1.gif')";
+                    document.getElementById('bio').style.width = '35vw';
+                    document.getElementById('bio').style.height = '60vh';
+                    document.getElementById('bio').style.top = '69%';
+                    document.getElementById('bio').style.left = '62%';
                     bioP = 1;
                     allPowerOn += 1;
                 }
@@ -453,7 +658,6 @@
             case 4:
                 openEl(4);
                 allPowerOn = 0;
-
                 break;
         }
 

@@ -45,6 +45,7 @@ function closeEl() {
     if (checkfirsttime == 1) {
         document.getElementById('village').style.animation = 'fadeShow 3s linear';
         checkfirsttime = 2;
+        document.getElementById('checkdiv').style.opacity = '1';
     }
     
     boxEl1.style.animation = "clElAni .2s linear";
