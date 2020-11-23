@@ -20,7 +20,8 @@
 
 </head>
 
-<body onload="onStartpage()">
+<body onload="">
+    <!-- onStartpage() -->
     <!-- Homepage -->
     <div id="homepage">
         <div id="hplogo"></div>
@@ -120,13 +121,13 @@
         <div id="btnwind" class="btn" onclick="applyPower(0); openEl(0)">
             <p class="btnvill1">พลังงานลม</p>
         </div>
-        <div id="btnwater" class="btn" onclick="applyPower(1);">
+        <div id="btnwater" class="btn" onclick="applyPower(1); openEl(1)">
             <p class="btnvill1">พลังงานน้ำ</p>
         </div>
-        <div id="btnsolar" class="btn" onclick="applyPower(2);">
+        <div id="btnsolar" class="btn" onclick="applyPower(2); openEl(2)">
             <p class="btnvill3">พลังงานเเสงอาทิตย์</p>
         </div>
-        <div id="btnbio" class="btn" onclick="applyPower(3);">
+        <div id="btnbio" class="btn" onclick="applyPower(3); openEl(3)">
             <p class="btnvill2">พลังงานชีวมวล</p>
         </div>
 
@@ -291,9 +292,91 @@
             </div>
         </div>
 
+        <div id="waterInFor" class="detialP" onclick="closeEl()" onscroll="showEL1(1);">
+            <img src="image/water/น้ำๆๆ.png" alt="">
+            <div id="box2-1" class="boxText">
+                <h1>พลังงานน้ำ</h1>
+            </div>
+            <div id="box2-2" class="boxText">
+                <h4>น้ำไหล ไฟไม่ดับ</h4>
+            </div>
+            <div id="box2-3" class="boxText">
+                เป็นพลังไม่มีวันหมด สร้างใหม่ได้เสมอ<br>การเคลื่อนที่ของน้ำเปลี่ยนเป็น<br>พลังงานไฟฟ้าได้
+            </div>
 
+            <div id="box2-4" class="boxText">
+                <h1>น้ำที่ไหลผ่าน<br>กลายเป็นไฟฟ้า</h1>
+            </div>
+            <div id="box2-5">
+                <p>
+                ต่อให้ผ่านกังหันน้ำ เขื่อน หรือ คลื่น<br>
+                ที่ซัดเข้าหาดก็ยังคงเป็นน้ำอยู่วันยันค่ำ<br>
+                แถมยังให้พลังงานกลับมาอีกด้วย<br>
+                เพียงทุกบ้าน หรือทุกหมู่บ้าน<br>
+                ติดตั้งกังหันน้ำก็จะมีไฟฟ้าในการ<br>
+                หุงข้าวเปิดพัดลมให้แสงสว่าง</p>
 
+            </div>
+            <div id="box2-6" class="boxHead">
+                <h1>กังหันจิ๋วในบ้านเรา</h1>
+            </div>
 
+            <div id="box2-7">
+                <img src="image/water/water1.png" alt="">
+                <div id="box2-7-1" class="head2Topic">
+                    <h4>หมู่บ้านคีรีวง<br>
+                        จังหวัดนครศรีธรรมราช</h4>
+                </div>
+                <div id="box2-7-2">
+                    <p>
+                    เลือกใช้กังหันน้ำขนาดเล็กพิเศษไว้ในบ้าน<br>
+                    ทำให้ชาวบ้านใช้ไฟฟ้าโดยไม่สร้างมลพิษ<br>
+                    และได้ชื่อว่าเป็นหมู่บ้านที่มีอากาศบริสุทธิ์<br>
+                    ที่สุดในเมืองไทย</p>
+                </div>
+            </div>
+
+            <div id="box2-8">
+                <img src="image/water/water2.png" alt="">
+                <div id="box2-8-1" class="head2Topic">
+                    <h4>ชุมชนเกาะตะรุเตา<br>
+                        จังหวัดสตูล</h4>
+                </div>
+                <div id="box2-8-2">
+                    <p>
+                    ได้เห็นต้นแบบของกังหันน้ำคีรีวง<br>
+                    และยังนำไปต่อยอดโดยการใช้เป็น<br>
+                    แรงสูบน้ำฉีดน้ำให้พืชผลและยัง<br>
+                    เหลือไว้ใช้ในครัวเรือนอีกด้วย</p>
+                </div>
+            </div>
+
+            <div id="box2-9">
+                <h2>พลังงานน้ำถูกเรียนรู้แล้ว<br>
+                    นำไปพัฒนาหมู่บ้าน ติดตั้งได้เลย!</h2>
+            </div>
+            <div id="box2-10" onclick="applyPower(1)">
+                <img id="box2-10-1" src="image/BTN.png" alt="">
+            </div>
+
+            <div id="picG1-2">
+                <img src="image/water/icon_0.png" alt="">
+            </div>
+            <div id="picG2-2">
+                <img src="image/water/Fan.gif" alt="">
+            </div>
+            <div id="picG3-2">
+
+            </div>
+        </div>
+
+        <div id="solarInFor" class="detialP" onclick="closeEl()" onscroll="showEL1(2);">
+            <img src="image/solar/bg-01.png" alt="">
+        </div>
+
+        <div id="bioInFor" class="detialP" onclick="closeEl()" onscroll="showEL1(3);">
+            <img src="image/bio/bg12.png" alt="">
+        </div>
 
         <div id="checkdiv" onclick="closeEl()"></div>
     </div>
@@ -327,7 +410,7 @@
 
     }
 
-    function onStartpage(){
+    function onStartpage() {
         document.getElementById('homepage').style.animation = 'fadeShow 2s linear';
         setTimeout(function () { document.getElementById('homepage').style.opacity = 1; }, 1800);
     }
