@@ -840,26 +840,26 @@ p{
     position: absolute;
     background-size:100% 100%;
     top: 65%;
-    background-color: orange;
+    /* background-color: orange; */
     /* width: 50px;
     height: 50px; */
     width: 2.8vw;
     height: 2.8vw;
 }
 #ctref3_12{
-    background-image: url('');
+    background-image: url('img/008ref_set/1icon.png');
     left: 23.6%;
 }
 #ctref3_22{
-    background-image: url('');
+    background-image: url('img/008ref_set/2icon.png');
     left: 39.5%;
 }
 #ctref3_32{
-    background-image: url('');
+    background-image: url('img/008ref_set/3icon.png');
     left: 55.5%;
 }
 #ctref3_42{
-    background-image: url('');
+    background-image: url('img/008ref_set/4icon.png');
     left: 71.5%;
 }
 #refimg1_windmill{
