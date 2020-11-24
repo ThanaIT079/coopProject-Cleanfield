@@ -24,14 +24,16 @@ p{
 
 /* Homepage */
 #homepage{
+    opacity: 0;
     position: relative;
     width: 100%;
     height: 100vh;
     background-image: url('img/000home/homebg.png');
     background-size:100% 100%;
-    opacity: 0;
+    
 }
 #hplogo{
+    opacity: 0;
     position: absolute;
     left: 50%;
     top: 30%;
@@ -44,6 +46,7 @@ p{
     background-size:100% 100%;
 }
 #cthp1{
+    opacity: 0;
     position: absolute;
     left: 50%;
     top: 62%;
@@ -52,6 +55,7 @@ p{
     font-size: 1.5vw;
 }
 #cthp2{
+    opacity: 0;
     position: absolute;
     /* width: 250px;
     height: 90px; */
@@ -332,7 +336,7 @@ p{
         opacity: 0;
     }
     25%{transform:translateY(-15px);
-        opacity: 0;
+        opacity: 0.25;
     }
     100%{transform:translateY(0px);
         opacity: 1;
@@ -883,4 +887,108 @@ p{
     top: 85%;
     left: 12%;
     transform: translate(-85%, -12%);
+}
+
+/* Button setting */
+
+/* Wind */
+#btnwinds{
+    position: absolute;
+    /* width: 20vw;
+    height: 9vh; */
+    width: 350px;
+    height: 80px;
+    top: 2150px;
+    left: 250px;
+    background-image: url('img/002village/water_wind388_114.png');
+    background-size:100% 100%;
+}
+.btnset1{
+    position: absolute;
+    font-size: 30px;
+    padding: 0;
+    margin: 0;
+    left: 30%;
+    top: 53%;
+    transform: translate(-20%, -53%);
+    color: white;
+}
+#btnwinds :hover{
+    cursor: pointer;
+}
+
+/* Water */
+#btnwaters{
+    position: absolute;
+    /* width: 20vw;
+    height: 9vh; */
+    width: 350px;
+    height: 80px;
+    top: 2000px;
+    left: 250px;
+    background-image: url('img/002village/water_wind388_114.png');
+    background-size:100% 100%;
+}
+.btnset2{
+    position: absolute;
+    font-size: 30px;
+    padding: 0;
+    margin: 0;
+    left: 30%;
+    top: 53%;
+    transform: translate(-20%, -53%);
+    color: white;
+}
+.freespacewater{
+    position: absolute;
+    top: 2050px;
+    left: 250px;
+    width: 100px;
+    height: 100px;
+}
+
+/* Bio */
+#btnbios{
+    position: absolute;
+    /* width: 20vw;
+    height: 9vh; */
+    top: 3430px;
+    left: 220px;
+    width: 380px;
+    height: 70px;
+    background-image: url('img/002village/bio484_114.png');
+    background-size:100% 100%;
+}
+.btnset4{
+    position: absolute;
+    font-size: 30px;
+    padding: 0;
+    margin: 0;
+    left: 20%;
+    top: 50%;
+    transform: translate(-8%, -50%);
+    color: white;
+}
+
+/* Solar */
+#btnsolars{
+    position: absolute;
+    /* top: 3400px;
+    left: 250px; */
+    top: 100px;
+    left: 220px;
+    width: 400px;
+    height: 70px;
+    background-image: url('img/002village/solar612_114.png');
+    background-size:100% 100%;
+}
+.btnset3{
+    position: absolute;
+    font-size: 30px;
+    padding: 0;
+    margin: 0;
+    left: 13%;
+    top: 50%;
+    transform: translate(-4%, -50%);
+    color: white;
 }

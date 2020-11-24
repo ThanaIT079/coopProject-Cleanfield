@@ -20,7 +20,7 @@
 
 </head>
 
-<body onload="">
+<body onload="onStartpage()">
     <!-- onStartpage() -->
     <!-- Homepage -->
     <div id="homepage">
@@ -281,8 +281,11 @@
                 <h2>พลังงานลมถูกเรียนรู้แล้ว<br>
                     นำไปพัฒนาหมู่บ้าน ติดตั้งได้เลย!</h2>
             </div>
-            <div id="box1-9" onclick="applyPower(0)">
-                <img id="box1-9-1" src="image/BTN.png" alt="">
+            <div id="box1-9" onclick="applyPower(0); closeEl()">
+                <img id="box1-9-1" src="" alt="">
+                <div id="btnwinds" class="btn">
+                    <p class="btnset1">ติดตั้งพลังงานลม</p>
+                </div>
             </div>
             <div id="picG1">
                 <img src="image/windmill.gif" alt="">
@@ -356,9 +359,14 @@
                 <h2>พลังงานน้ำถูกเรียนรู้แล้ว<br>
                     นำไปพัฒนาหมู่บ้าน ติดตั้งได้เลย!</h2>
             </div>
-            <div id="box2-10" onclick="applyPower(1)">
-                <img id="box2-10-1" src="image/BTN.png" alt="">
+            <div id="box2-10" onclick="applyPower(1); closeEl()">
+                <img id="box2-10-1" src="" alt="">
+                <div id="btnwaters" class="btn">
+                    <p class="btnset2">ติดตั้งพลังงานน้ำ</p>
+                </div>
             </div>
+
+            <div class="freespacewater"></div>
 
             <div id="picG1-2">
                 <img src="image/water/icon_0.png" alt="">
@@ -373,6 +381,14 @@
 
         <div id="solarInFor" class="detialP" onclick="closeEl()" onscroll="showEL1(2);">
             <img src="image/solar/bg-01.png" alt="">
+
+            <div id="box3-x" onclick="applyPower(2); closeEl()">
+                <img id="box2-10-1" src="" alt="">
+                <div id="btnsolars" class="btn">
+                    <p class="btnset3">ติดตั้งพลังงานเเสงอาทิตย์</p>
+                </div>
+            </div>
+
         </div>
 
         <div id="bioInFor" class="detialP" onclick="closeEl()" onscroll="showEL1(3);">
@@ -524,8 +540,11 @@
                     นำไปพัฒนาหมู่บ้าน ติดตั้งได้เลย!</h2>
             </div>
             
-            <div id="box4-17" onclick="applyPower(3)">
-                <img id="box2-10-1" src="image/BTN.png" alt="">
+            <div id="box4-17" onclick="applyPower(3); closeEl()">
+                <img id="box4-17-1" src="" alt="">
+                <div id="btnbios" class="btn">
+                    <p class="btnset4">ติดตั้งพลังงานชีวมวล</p>
+                </div>
             </div>
 
             <div class="freespacebio"></div>
@@ -607,13 +626,20 @@
     function gotostart() {
         document.getElementById('village').style.animation = 'fadeOff 2s linear';
         document.getElementById('village').style.opacity = 0;
-        setTimeout(function () { location.reload(); }, 2000);
+        document.getElementById('homepage').style.display = 'none';
+        document.getElementById('hplogo').style.display = 'none';
+        document.getElementById('cthp1').style.display = 'none';
+        document.getElementById('cthp2').style.display = 'none';
+        setTimeout(function () { location.reload(); }, 1000);
 
     }
 
     function onStartpage() {
         document.getElementById('homepage').style.animation = 'fadeShow 2s linear';
-        setTimeout(function () { document.getElementById('homepage').style.opacity = 1; }, 1800);
+        document.getElementById('homepage').style.opacity = 1; 
+        document.getElementById('hplogo').style.opacity = 1;
+        document.getElementById('cthp1').style.opacity = 1;
+        document.getElementById('cthp2').style.opacity = 1;
     }
 
     let windP = 0;
@@ -657,7 +683,7 @@
                 break;
             case 4:
                 openEl(4);
-                allPowerOn = 0;
+                // allPowerOn = 0;
                 break;
         }
 

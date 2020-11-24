@@ -2,7 +2,7 @@ let boxEl1;
 let boxEl2;
 let villagebg;
 let clickCount = 4;
-let checkfirsttime = 2; // don't forget set it to 0 when you finnish all testing css
+let checkfirsttime = 0; // don't forget set it to 0 when you finnish all testing css
 let powers = ['windInFor', 'waterInFor', 'solarInFor', 'bioInFor', 'refInFor', 'how2'];
 function openEl(x) {
     clickCount = 1;
@@ -29,7 +29,8 @@ function openEl(x) {
             break;
         /* Case 1 - 3 wind > water > solar > bio */
 
-
+        
+        
         case 5:
             if (checkfirsttime == 0) {
                 checkfirsttime = 1;

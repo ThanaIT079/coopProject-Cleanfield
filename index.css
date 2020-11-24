@@ -495,13 +495,13 @@ body, html{
 
 #box1-9{
     position: absolute;
-    top: 2120px;
-    left: 290px;
+    /* top: 2120px;
+    left: 290px; */
 }
 
 #box1-9 > img{
-    width: 250px;
-    height: 50px;
+    /* width: 250px;
+    height: 50px; */
 }
 
 #box1-9-1{
@@ -908,14 +908,14 @@ red{
 
 #box4-17 > img{
     position: absolute;
-    top: 3400px;
+    /* top: 3400px;
     left: 250px;
     width: 350px;
-    height: 70px;
+    height: 70px; */
 } 
 #box4-17 :hover{
-    transform: scale(1.1, 1.1);
-    cursor: pointer;
+    /* transform: scale(1.1, 1.1);
+    cursor: pointer; */
 }
 
 .freespacebio{
@@ -1074,13 +1074,13 @@ red{
 
 #box2-10{
     position: absolute;
-    top: 1950px;
-    left: 290px;
+    /* top: 1950px;
+    left: 290px; */
 }
 
 #box2-10 > img{
-    width: 250px;
-    height: 50px;
+    /* width: 250px;
+    height: 50px; */
 }
 
 #box2-10-1:hover{
