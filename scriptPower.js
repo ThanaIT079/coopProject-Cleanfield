@@ -79,11 +79,12 @@ function openEl(x) {
             break;
         case 4:
             // document.getElementById('refimg1_windmill').style.animation = "fadeInR 1s linear";
-            document.getElementById('refimg1_windmill').style.visibility = "visible";
-            document.getElementById('refimg2_leaf1').style.animation = "fadeInO 1s linear";
-            document.getElementById('refimg2_leaf1').style.visibility = "visible";
-            document.getElementById('refimg2_leaf2').style.animation = "fadeInO 1s linear";
-            document.getElementById('refimg2_leaf2').style.visibility = "visible";
+            // document.getElementById('refimg1_windmill').style.visibility = "visible";
+            // document.getElementById('refimg2_leaf1').style.animation = "fadeInO 1s linear";
+            // document.getElementById('refimg2_leaf1').style.visibility = "visible";
+            // document.getElementById('refimg2_leaf2').style.animation = "fadeInO 1s linear";
+            // document.getElementById('refimg2_leaf2').style.visibility = "visible";
+
 
             break;
         case 5:
@@ -100,6 +101,8 @@ function openEl(x) {
 
 function closeEl() {
     clickCount++;
+    chekscrolls = 0;
+    
     if (checkfirsttime == 1) {
         document.getElementById('village').style.animation = 'fadeShow 3s linear';
         checkfirsttime = 2;
@@ -212,13 +215,9 @@ function closeEl() {
 
         if (allPowerOn == 4) { // when you close the 4th clean power pop up ref & setting will showup automatic
             applyPower(4);
-
+            allPowerOn = 0;
         }
-
-
-
-
-
+        showScroll(pow);
     }, 190); //Delay For animation < animation = smooth
 
 

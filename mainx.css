@@ -113,6 +113,22 @@ p{
     position: absolute;
     font-size: 3.5vw;
     color: white;
+    left: 30%;
+    top: 50%;
+    transform: translate(-20%, -50%);
+}
+.cftxt6{
+    position: absolute;
+    font-size: 3.5vw;
+    color: white;
+    left: 22%;
+    top: 50%;
+    transform: translate(-10%, -50%);
+}
+.cftxt7{
+    position: absolute;
+    font-size: 3.5vw;
+    color: white;
     left: 20%;
     top: 50%;
     transform: translate(-10%, -50%);
@@ -321,8 +337,8 @@ p{
     position: absolute;
     /* width: 460px;
     height: 140px; */
-    width: 24vw;
-    height: 8vw;
+    width: 22vw;
+    height: 6.5vw;
     background-image: url('img/000home/hpbtn1.png');
     background-size:100% 100%;
     left: 50%;
@@ -341,6 +357,11 @@ p{
     100%{transform:translateY(0px);
         opacity: 1;
     }
+}
+@keyframes fadeShow2{
+    0%{ opacity: 0;}
+    25%{opacity: 0.25;}
+    100%{opacity: 1;}
 }
 @keyframes fadeOff{ 
     0%{transform:translateY(0px);
@@ -458,6 +479,7 @@ p{
     height: 21vh;
     left: 55%;
     top: 35%;
+    opacity: 0;
     transform: translate(-97%, -35%);
     background-image: url('img/002village/factory.png');
     /* background-image: url('img/002village/solar1.png'); */
@@ -467,30 +489,51 @@ p{
 
 .btnvill1{
     position: absolute;
-    font-size: 2.8vw;
+    font-size: 2vw;
     padding: 0;
     margin: 0;
-    left: 30%;
-    top: 53%;
-    transform: translate(-20%, -53%);
+    left: 21%;
+    top: 50%;
+    transform: translate(-10%, -53%);
+    color: white;
+}
+
+.btnvill1s{
+    position: absolute;
+    font-size: 2vw;
+    padding: 0;
+    margin: 0;
+    left: 21%;
+    top: 56%;
+    transform: translate(-10%, -53%);
     color: white;
 }
 .btnvill2{
     position: absolute;
-    font-size: 2.8vw;
+    font-size: 2vw;
     padding: 0;
     margin: 0;
-    left: 20%;
+    left: 17%;
     top: 50%;
-    transform: translate(-8%, -50%);
+    transform: translate(-9%, -50%);
     color: white;
 }
 .btnvill3{
     position: absolute;
-    font-size: 2.8vw;
+    font-size: 2vw;
     padding: 0;
     margin: 0;
-    left: 12%;
+    left: 10%;
+    top: 50%;
+    transform: translate(-4%, -50%);
+    color: white;
+}
+.btnvill4{
+    position: absolute;
+    font-size: 2vw;
+    padding: 0;
+    margin: 0;
+    left: 10%;
     top: 50%;
     transform: translate(-4%, -50%);
     color: white;
@@ -499,8 +542,8 @@ p{
     position: absolute;
     /* width: 250px;
     height: 70px; */
-    width: 20vw;
-    height: 9vh;
+    width: 13vw;
+    height: 8vh;
     background-image: url('img/002village/water_wind388_114.png');
     background-size:100% 100%;
     left: 10%;
@@ -509,8 +552,8 @@ p{
 }
 #btnwind{
     position: absolute;
-    width: 20vw;
-    height: 9vh;
+    width: 13vw;
+    height: 8vh;
     background-image: url('img/002village/water_wind388_114.png');
     background-size:100% 100%;
     left: 20%;
@@ -521,8 +564,8 @@ p{
     position: absolute;
     /* width: 300px;
     height: 70px; */
-    width: 25vw;
-    height: 9vh;
+    width: 16vw;
+    height: 8vh;
     background-image: url('img/002village/bio484_114.png');
     background-size:100% 100%;
     left: 53%;
@@ -533,13 +576,26 @@ p{
     position: absolute;
     /* width: 380px;
     height: 70px; */
-    width: 28vw;
-    height: 9vh;
+    width: 19vw;
+    height: 8vh;
     background-image: url('img/002village/solar612_114.png');
     background-size:100% 100%;
-    left: 90%;
-    top: 20%;
+    left: 92%;
+    top: 23%;
     transform: translate(-85%, -30%);
+}
+#btnrefss{
+    position: absolute;
+    /* width: 380px;
+    height: 70px; */
+    opacity: 0;
+    width: 23.5vw;
+    height: 8vh;
+    background-image: url('img/002village/2solar612_114.png');
+    background-size:100% 100%;
+    left: 55%;
+    top: 20%;
+    transform: translate(-50%, -40%);
 }
 
 /* How to Popup */
@@ -632,7 +688,7 @@ p{
     /* width: 460px;
     height: 140px; */
     width: 24vw;
-    height: 8vw;
+    height: 6.5vw;
     background-image: url('img/000home/hpbtn1.png');
     background-size:100% 100%;
     top: 250%;
@@ -738,7 +794,7 @@ p{
     position: absolute;
     /* width: 460px;
     height: 140px; */
-    width: 28.5vw;
+    width: 30vw;
     height: 6.5vw;
     background-image: url('img/002village/bio484_114.png');
     background-size:100% 100%;
@@ -868,7 +924,7 @@ p{
     background-size:100% 100%;
     width: 27vw;
     height: 22vw;
-    top: 15%;
+    top: 10%;
     left: 35%;
     transform: translate(-5%, -35%);
 }
@@ -994,4 +1050,48 @@ p{
     left: 250px;
     width: 100px;
     height: 100px;
+}
+
+/* Add plus after present */
+#closepop{
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    /* background-color: rgba(255, 0, 0, 0.50); */
+    background-image: url('img/003how2/closebtn.png');
+    background-size:100% 100%;
+    top: 2%;
+    right: 2%;
+}
+
+.scrollb{
+    position: absolute;
+    /* width: 46.5px;
+    height: 78px; */
+    width: 37.2px;
+    height: 62.4px;
+    background-image: url('img/002village/sd001.png');
+    background-size:100% 100%;
+    top: 540px;
+    left: 50%;
+    transform: translate(-50%);
+    animation: Mscrolldown 2.5s infinite;
+}
+#textscroll1, #textscroll2, #textscroll3, #textscroll4{
+    position: absolute;
+    font-size: 20px;
+    top: 500px;
+    left: 50%;
+    transform: translate(-50%);
+    color: rgb(255, 132, 0);
+}
+@keyframes Mscrolldown {
+    0%{ background-image: url('img/002village/sd001.png'); }
+    15%{ background-image: url('img/002village/sd002.png'); }
+    30%{ background-image: url('img/002village/sd003.png'); }
+    45%{ background-image: url('img/002village/sd004.png'); }
+    60%{ background-image: url('img/002village/sd005.png'); }
+    75%{ background-image: url('img/002village/sd006.png'); }
+    80%{ background-image: url('img/002village/sd007.png'); }
+    100%{ background-image: url('img/002village/sd007.png'); }
 }

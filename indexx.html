@@ -97,7 +97,7 @@
                 <p class="cftxt2">พลังงานน้ำ</p>
             </div>
             <div id="cfbtn" class="btn" onclick="nextContent(1)">
-                <p class="cftxt5">เข้าสู่หมู่บ้าน</p>
+                <p class="cftxt5">วิธีการเล่น</p>
             </div>
         </div>
     </div>
@@ -116,20 +116,23 @@
         <div id="water"></div>
         <div id="solar"></div>
         <div id="bio"></div>
-        
+
 
         <!-- Button : Press to open Popup  func. openEl here-->
         <div id="btnwind" class="btn" onclick="openEl(0)">
             <p class="btnvill1">พลังงานลม</p>
         </div>
         <div id="btnwater" class="btn" onclick="openEl(1)">
-            <p class="btnvill1">พลังงานน้ำ</p>
+            <p class="btnvill1s">พลังงานน้ำ</p>
         </div>
         <div id="btnsolar" class="btn" onclick="openEl(2)">
             <p class="btnvill3">พลังงานเเสงอาทิตย์</p>
         </div>
         <div id="btnbio" class="btn" onclick="openEl(3)">
             <p class="btnvill2">พลังงานชีวมวล</p>
+        </div>
+        <div id="btnrefss" class="btn" onclick="openEl(4)">
+            <p class="btnvill4">การติดตั้งพลังงานสะอาด</p>
         </div>
 
         <!-- How to play-->
@@ -159,7 +162,7 @@
             <p class="ch2tx t11">อื่นต่อได้</p>
 
             <div id="btnhow22" class="btn" onclick="closeEl()">
-                <p class="cftxt5">เข้าสู่หมู่บ้าน</p>
+                <p class="cftxt6">เข้าสู่หมู่บ้าน</p>
             </div>
             <div class="freespace"></div>
             <div id="leaf1"></div>
@@ -169,7 +172,8 @@
 
         <!-- Ref > Show after setting all clean power (automatic) -->
         <div id="refInFor" class="detialPref">
-            <!-- <div id="closehow2" class="btn" onclick="closeEl()"></div> -->
+            <div id="closehow2" class="btn" onclick="closeEl()"></div>
+
             <div id="refimg1_windmill"></div>
             <div id="refimg2_leaf1"><img src="image/wind/l2.png" alt=""></div>
             <div id="refimg2_leaf2"><img src="image/wind/l2.png" alt=""></div>
@@ -219,13 +223,14 @@
             </div>
 
             <div id="btnref" class="btn" onclick="closeEl(); gotostart(); clearRef()">
-                <p class="cftxt5">กลับสู่จุดเริ่มต้น</p>
+                <p class="cftxt7">กลับสู่จุดเริ่มต้น</p>
             </div>
             <div class="freespace2"></div>
         </div>
 
         <!-- Information Prototype -->
-        <div id="windInFor" class="detialP" onclick="closeEl()" onscroll="showEL1(0);">
+        <div id="windInFor" class="detialP" onclick="closeEl()" onscroll="showEL1(0); checkscroll(1)">
+            <div id="closepop" class="btn" onclick="closeEl()"></div>
             <img src="image/wind/wind-bg.png" alt="">
             <div id="box1-1" class="boxText">
                 <h1>พลังงานลม</h1>
@@ -344,9 +349,12 @@
             <div id="picG18">
                 <img src="image/wind/l2.png" alt="">
             </div>
+            <div id="textscroll1">Scroll Down</div>
+            <div id="scrolldown1" class="scrollb"></div>
         </div>
 
-        <div id="waterInFor" class="detialP" onclick="closeEl()" onscroll="showEL1(1);">
+        <div id="waterInFor" class="detialP" onclick="closeEl()" onscroll="showEL1(1); checkscroll(2)">
+            <div id="closepop" class="btn" onclick="closeEl()"></div>
             <img src="image/water/น้ำๆๆ.png" alt="">
             <div id="box2-1" class="boxText">
                 <h1>พลังงานน้ำ</h1>
@@ -409,7 +417,7 @@
                 <h2>พลังงานน้ำถูกเรียนรู้แล้ว<br>
                     นำไปพัฒนาหมู่บ้าน ติดตั้งได้เลย!</h2>
             </div>
-    
+
             <div id="box2-10" onclick="applyPower(1); closeEl()">
                 <img id="box2-10-1" src="" alt="">
                 <div id="btnwaters" class="btn">
@@ -427,9 +435,12 @@
             <div id="picG3-2">
                 <img src="image/water/pot.GIF" alt="">
             </div>
+            <div id="textscroll2">Scroll Down</div>
+            <div id="scrolldown2" class="scrollb"></div>
         </div>
 
-        <div id="solarInFor" class="detialP" onclick="closeEl()" onscroll="showEL1(2);">
+        <div id="solarInFor" class="detialP" onclick="closeEl()" onscroll="showEL1(2); checkscroll(3)">
+            <div id="closepop" class="btn" onclick="closeEl()"></div>
             <img src="image/solar/bg-01.png" alt="">
             <div id="box3-1" class="boxText">
                 <h1>พลังงาน<br>แสงอาทิตย์</h1>
@@ -468,7 +479,7 @@
                         ภายในหมู่บ้าน<br>
                         ลดค่าใช้จ่ายไปได้ถึง<br>
                         2000-3000 บาท/เดือน
-                        </p>
+                    </p>
                 </div>
             </div>
             <div id="box3-8">
@@ -495,7 +506,7 @@
             </div>
 
             <div class="freespacesolar"></div>
-            
+
             <div id="picG1-3">
                 <img src="image/solar/sunn.gif" alt="">
             </div>
@@ -511,10 +522,12 @@
             <div id="picG5-3">
                 <img src="image/solar/sunn.gif" alt="">
             </div>
-
+            <div id="textscroll3">Scroll Down</div>
+            <div id="scrolldown3" class="scrollb"></div>
         </div>
 
-        <div id="bioInFor" class="detialP" onclick="closeEl()" onscroll="showEL1(3);">
+        <div id="bioInFor" class="detialP" onclick="closeEl()" onscroll="showEL1(3); checkscroll(4)">
+            <div id="closepop" class="btn" onclick="closeEl()"></div>
             <img src="image/bio/bg12.png" alt="">
 
             <div id="box4-1" class="boxText">
@@ -549,7 +562,7 @@
                     เพื่อลดต้นทุนได้</p>
             </div>
 
-            
+
             <div id="box4-7">
                 <img src="img/007bio/biobar1.png" alt="">
                 <div id="box4-7-1">
@@ -565,7 +578,8 @@
                     <p>
                         แกลบที่เหลือ<br>
                         ผลิตไฟฟ้าได้ถึง<br>
-                        <red>90-125 กิโลวัตต์</red></p>
+                        <red>90-125 กิโลวัตต์</red>
+                    </p>
                 </div>
             </div>
 
@@ -584,7 +598,8 @@
                     <p>
                         กากอ้อยที่เหลือ<br>
                         ผลิตไฟฟ้าได้ถึง<br>
-                        <red>100 กิโลวัตต์</red></p>
+                        <red>100 กิโลวัตต์</red>
+                    </p>
                 </div>
             </div>
 
@@ -605,7 +620,8 @@
                     <p>
                         เศษปาล์มที่เหลือ<br>
                         ผลิตไฟฟ้าได้ถึง<br>
-                        <red>120 กิโลวัตต์</red></p>
+                        <red>120 กิโลวัตต์</red>
+                    </p>
                 </div>
             </div>
 
@@ -625,10 +641,11 @@
                     <p>
                         เศษไม้ที่เหลือ<br>
                         ผลิตไฟฟ้าได้ถึง<br>
-                        <red>80 กิโลวัตต์</red></p>
+                        <red>80 กิโลวัตต์</red>
+                    </p>
                 </div>
             </div>
-            
+
             <div id="box4-11" class="boxHead">
                 <h1>ผลิตภัณฑ์สร้างแสงสว่าง</h1>
             </div>
@@ -641,7 +658,7 @@
             <div id="box4-13">
                 โรงไฟฟ้าชีวมวลชุมชนใช้แกลบไม้<br>
                 ที่เหลือจากในชุมชนมาทำเป็น<br>
-                พลังงานไฟฟ้าในหมู่บ้าน 
+                พลังงานไฟฟ้าในหมู่บ้าน
             </div>
 
             <div id="box4-14">
@@ -657,7 +674,7 @@
                 มาผสมเป็นอาหารให้สัตว์ได้อีกด้วย
             </div>
 
-            
+
             <div id="box4-16">
                 <h2>พลังงานชีวมวลถูกเรียนรู้แล้ว<br>
                     นำไปพัฒนาหมู่บ้าน ติดตั้งได้เลย!</h2>
@@ -719,8 +736,10 @@
             <div id="picG12-4">
                 <img src="img/007bio/bio2.png" alt="">
             </div>
+            <div id="textscroll4">Scroll Down</div>
+            <div id="scrolldown4" class="scrollb"></div>
         </div>
-
+        
         <div id="checkdiv" onclick="closeEl()"></div>
     </div>
 
@@ -759,7 +778,7 @@
 
     function onStartpage() {
         document.getElementById('homepage').style.animation = 'fadeShow 2s linear';
-        document.getElementById('homepage').style.opacity = 1; 
+        document.getElementById('homepage').style.opacity = 1;
         document.getElementById('hplogo').style.opacity = 1;
         document.getElementById('cthp1').style.opacity = 1;
         document.getElementById('cthp2').style.opacity = 1;
@@ -771,10 +790,12 @@
     let solarP = 0;
     let allPowerOn = 0;
     function applyPower(a) {
+        showScroll(pow);
         switch (a) {
             case 0: // wind
                 if (windP == 0) {
                     document.getElementById('wind').style.backgroundImage = "url('img/002village/wind1.gif')";
+                    document.getElementById('btnwind').style.backgroundImage = "url('img/002village/2water_wind388_114.png')";
                     windP = 1;
                     allPowerOn += 1;
                 }
@@ -782,6 +803,7 @@
             case 1: // water
                 if (waterP == 0) {
                     document.getElementById('water').style.backgroundImage = "url('img/002village/water1.png')";
+                    document.getElementById('btnwater').style.backgroundImage = "url('img/002village/2water_wind388_114.png')";
                     waterP = 1;
                     allPowerOn += 1;
                 }
@@ -789,6 +811,7 @@
             case 2: // solar
                 if (solarP == 0) {
                     document.getElementById('solar').style.backgroundImage = "url('img/002village/solar1.png')";
+                    document.getElementById('btnsolar').style.backgroundImage = "url('img/002village/2solar612_114.png')";
                     solarP = 1;
                     allPowerOn += 1;
                 }
@@ -796,6 +819,7 @@
             case 3: // bio
                 if (bioP == 0) {
                     document.getElementById('bio').style.backgroundImage = "url('img/002village/bio1.gif')";
+                    document.getElementById('btnbio').style.backgroundImage = "url('img/002village/2bio484_114.png')";
                     document.getElementById('bio').style.width = '35vw';
                     document.getElementById('bio').style.height = '60vh';
                     document.getElementById('bio').style.top = '69%';
@@ -805,13 +829,68 @@
                 }
                 break;
             case 4:
-                openEl(4);
-                // allPowerOn = 0;
+                document.getElementById('ref').style.animation = 'fadeShow2 2s linear';
+                document.getElementById('btnrefss').style.animation = 'fadeShow2 2s linear';
+                setTimeout(function () {
+                    document.getElementById('ref').style.opacity = '1';
+                    document.getElementById('btnrefss').style.opacity = '1';
+                }, 1800);
+
+                document.getElementById('btnrefss').style.backgroundImage = "url('img/002village/solar612_114.png')";
                 break;
+
+
         }
 
     }
 
+    let chekscrolls = 0;
+    let pow = 0;
+    function checkscroll(x) {
+        if (chekscrolls == 0) {
+            switch (x) {
+                case 1:
+                    document.getElementById('textscroll1').style.display = 'none';
+                    document.getElementById('scrolldown1').style.display = 'none';
+                    break;
+                case 2:
+                    document.getElementById('textscroll2').style.display = 'none';
+                    document.getElementById('scrolldown2').style.display = 'none';
+                    break;
+                case 3:
+                    document.getElementById('textscroll3').style.display = 'none';
+                    document.getElementById('scrolldown3').style.display = 'none';
+                    break;
+                case 4:
+                    document.getElementById('textscroll4').style.display = 'none';
+                    document.getElementById('scrolldown4').style.display = 'none';
+                    break;
+            }
+        }
+        pow = x;
+        chekscrolls = 1;
+    }
+    
+    function showScroll(x) {
+        switch (x) {
+            case 1:
+                document.getElementById('textscroll1').style.display = 'block';
+                document.getElementById('scrolldown1').style.display = 'block';
+                break;
+            case 2:
+                document.getElementById('textscroll2').style.display = 'block';
+                document.getElementById('scrolldown2').style.display = 'block';
+                break;
+            case 3:
+                document.getElementById('textscroll3').style.display = 'block';
+                document.getElementById('scrolldown3').style.display = 'block';
+                break;
+            case 4:
+                document.getElementById('textscroll4').style.display = 'block';
+                document.getElementById('scrolldown4').style.display = 'block';
+                break;
+        }
+    }
 </script>
 
 </html>
