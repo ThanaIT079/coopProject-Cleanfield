@@ -78,7 +78,7 @@ function openEl(x) {
 
             break;
         case 4:
-            document.getElementById('refimg1_windmill').style.animation = "fadeInR 1s linear";
+            // document.getElementById('refimg1_windmill').style.animation = "fadeInR 1s linear";
             document.getElementById('refimg1_windmill').style.visibility = "visible";
             document.getElementById('refimg2_leaf1').style.animation = "fadeInO 1s linear";
             document.getElementById('refimg2_leaf1').style.visibility = "visible";
