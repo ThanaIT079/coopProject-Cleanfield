@@ -207,17 +207,11 @@ body, html{
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
-    /* background-color: black; */
+    height: 100%;
+    background-color: black;
     opacity: 0;
     visibility: hidden;
-
-    /* Add by Auto */
-    filter: blur(8);
-    -webkit-filter: blur(8px);
-    background-image: url('img/002village/villagebg.png');
-    background-size:100% 100%;
-    
+    /* display: none; */
 }
 
 @keyframes opElAni{
@@ -345,6 +339,9 @@ body, html{
 }
 
 /* wind */
+#windInFor{
+    
+}
 
 #windInFor > img{
     position: absolute;
@@ -406,6 +403,15 @@ body, html{
 #box1-4 > div >img{
     width: 200px;
     height: 150px;
+}
+
+#fixGIF_box1-4-3{
+    width: 200px;
+    height: 150px;
+    background-color: white;
+    background-image: url("image/wind/waterturbine.gif");
+    background-repeat: no-repeat;
+    background-size: 120% 102%;
 }
 
 #box1-4-1{
@@ -543,9 +549,9 @@ body, html{
 #picG2{
     position: absolute;
     top: 700px;
-    left: 580px;
-    width: 100px;
-    height: 100px;
+    left: 690px;
+    width: 70px;
+    height: 70px;
     background-image: url("image/mill.png");
     background-repeat: no-repeat;
     background-size: 85% 100%;
@@ -558,10 +564,10 @@ body, html{
 
 #picG3{
     position: absolute;
-    top: 1310px;
-    left: 430px;
-    width: 100px;
-    height: 100px;
+    top: 800px;
+    left: 600px;
+    width: 70px;
+    height: 70px;
     background-image: url("image/mill.png");
     background-repeat: no-repeat;
     background-size: 85% 100%;
@@ -570,6 +576,188 @@ body, html{
     visibility: hidden;
 }
 
+#picG4{
+    position: absolute;
+    top: 140px;
+    left: 130px;
+    visibility: hidden;
+}
+
+#picG4>img{
+    width: 70px;
+    height: 120px;
+}
+
+#picG5{
+    position: absolute;
+    top: 528px;
+    left: 90px;
+}
+
+#picG5>img{
+    width: 100px;
+    height: 80px;
+    transform: rotate3d(-1, 0.2, 0, 3rad);
+}
+
+#picG6{
+    position: absolute;
+    top: 528px;
+    left: 330px;
+}
+
+#picG6>img{
+    width: 50px;
+    height: 30px;
+    transform: rotate3d(0, 3, 0, 3rad);
+}
+
+#picG7{
+    position: absolute;
+    top: 580px;
+    left: 430px;
+}
+
+#picG7>img{
+    width: 50px;
+    height: 35px;
+    transform: rotate3d(-1.2, 1, 0, 3rad);
+}
+
+#picG8{
+    position: absolute;
+    top: 700px;
+    left: 300px;
+}
+
+#picG8>img{
+    width: 40px;
+    height: 30px;
+    transform: rotate3d(0.25, 1, 0, 3rad);
+}
+
+#picG9{
+    position: absolute;
+    top: 820px;
+    left: 100px;
+    visibility: hidden;
+}
+
+#picG9>img{
+    width: 80px;
+    height: 60px;
+    transform: rotate3d(0.7, 1, 0, 3rad);
+}
+
+#picG10{
+    position: absolute;
+    top: 880px;
+    left: 80px;
+    visibility: hidden;
+}
+
+#picG10>img{
+    width: 60px;
+    height: 40px;
+    transform: rotate3d(0, 0, 0, 3rad);
+}
+
+#picG11{
+    position: absolute;
+    top: 750px;
+    left: 550px;
+}
+
+#picG11>img{
+    width: 60px;
+    height: 40px;
+    transform: rotate3d(0, 0, -1, 4.4rad);
+}
+
+#picG12{
+    position: absolute;
+    top: 920px;
+    left: 690px;
+}
+
+#picG12>img{
+    width: 40px;
+    height: 30px;
+    transform: rotate3d(0.7, 1, 0, 3rad);
+}
+
+#picG13{
+    position: absolute;
+    top: 920px;
+    left: 740px;
+}
+
+#picG13>img{
+    width: 40px;
+    height: 30px;
+    transform: rotate3d(0, 0, 1, 9.5rad);
+}
+
+#picG14{
+    position: absolute;
+    top: 1100px;
+    left: 100px;
+}
+
+#picG14>img{
+    width: 30px;
+    height: 25px;
+    transform: rotate3d(-0.09, 0.1, 0, 3rad);
+}
+
+#picG15{
+    position: absolute;
+    top: 1300px;
+    left: 650px;
+    visibility: hidden;
+}
+
+#picG15>img{
+    width: 100px;
+    height: 80px;
+    transform: rotate3d(-0.1,-1,0,3rad);
+}
+
+#picG16{
+    position: absolute;
+    top: 1630px;
+    left: 650px;
+}
+
+#picG16>img{
+    width: 30px;
+    height: 25px;
+    transform: rotate3d(.5, 1, 0, 3rad);
+}
+
+#picG17{
+    position: absolute;
+    top: 1870px;
+    left: 100px;
+}
+
+#picG17>img{
+    width: 30px;
+    height: 25px;
+    transform: rotate3d(0, 0, 1, 3rad);
+}
+
+#picG18{
+    position: absolute;
+    top: 2030px;
+    left: 100px;
+}
+
+#picG18>img{
+    width: 100px;
+    height: 80px;
+    transform: rotate3d(0,0, -1, 30rad);
+}
 
 @keyframes Mill{
     0%{transform: rotate(0deg);}
@@ -586,6 +774,429 @@ body, html{
     z-index: -1;
 }
 
+
+#box2-1{
+    position: absolute;
+    top: 145px;
+    left: 500px;
+    visibility: hidden;
+}
+
+#box2-1 > h1{
+    font-size: 44px;
+}
+
+#box2-2{
+    position: absolute;
+    top: 200px;
+    left: 577.9px;
+    visibility: hidden;
+}
+
+#box2-2 >h4{
+    font-size: 20px;
+}
+
+#box2-3{
+    position: absolute;
+    top: 263px;
+    left: 490px;
+    text-align: right;
+    line-height: 20px;
+    font-size: 14px;
+    line-height: 17px;
+    visibility: hidden;
+}
+
+#box2-4{
+    position: absolute;
+    top: 583px;
+    left: 290px;
+    visibility: hidden;
+}
+
+#box2-4>h1{
+    font-size: 58px;
+    text-align: center;
+    line-height: 75px;
+}
+
+#box2-5{
+    position: absolute;
+    top: 790px;
+    left: 340px;
+    text-align: center;
+    line-height: 20px;
+    visibility: hidden;
+}
+
+#box2-6{
+    position: absolute;
+    top: 1100px;
+    left: 130px;
+    visibility: hidden;
+}
+
+#box2-7{
+    position: absolute;
+    top: 1230px;
+    width: 800px;
+    height: 200px;
+    visibility: hidden;
+}
+
+#box2-7 > img{
+    position: absolute;
+    width: 250px;
+    height: 240px;
+    left: 130px;
+}
+
+#box2-7-1{
+    position: absolute;
+    top: 30px;
+    left: 410px;
+    line-height: 22px;
+}
+
+#box2-7-2{
+    position: absolute;
+    top: 120px;
+    left: 410px;
+    line-height: 20px;
+}
+
+#box2-8{
+    position: absolute;
+    top: 1530px;
+    width: 800px;
+    height: 200px;
+}
+
+#box2-8 > img{
+    position: absolute;
+    left: 440px;
+    width: 250px;
+    height: 240px;
+}
+
+#box2-8-1{
+    position: absolute;
+    top: 20px;
+    left: 280px;
+    text-align: right;
+    line-height: 22px;
+}
+
+#box2-8-2{
+    position: absolute;
+    left: 195px;
+    text-align: right;
+    top: 110px;
+    line-height: 20px;
+}
+
+#box2-9{
+    position: absolute;
+    top: 1830px;
+    left: 240px;
+    font-size: 18px;
+    text-align: center;
+    color: rgb(53, 168, 105);
+    /* visibility : visible; */
+}
+
+#box2-10{
+    position: absolute;
+    /* top: 1950px;
+    left: 290px; */
+}
+
+#box2-10 > img{
+    /* width: 250px;
+    height: 50px; */
+}
+
+#box2-10-1:hover{
+    transform: scale(1.1, 1.1);
+    cursor: pointer;
+}
+#box2-10-1{
+    /* visibility: visible; */
+}
+
+
+#picG1-2{
+    position: absolute;
+    top: 50px;
+    left: 650px;
+}
+
+#picG1-2 > img{
+    width: 60px;
+    height: 100px;
+}
+
+#picG2-2{
+    position: absolute;
+    top: 740px;
+    left: 470px;
+    visibility: hidden;
+}
+
+#picG2-2 > img{
+    width: 390px;
+    height: 220px;
+}
+
+#picG3-2{
+    position: absolute;
+    top: 710px;
+    left: -85px;
+    visibility: hidden;
+}
+
+#picG3-2 > img{
+    width: 590px;
+    height: 340px;
+}
+/* solar */
+
+#solarInFor > img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+#box3-1{
+    position: absolute;
+    top: 170px;
+    left: 470px;
+    visibility: hidden;
+}
+
+#box3-1>h1{
+    font-size: 55px;
+    line-height: 62px;
+    text-align: right;
+}
+
+#box3-2{
+    position: absolute;
+    top: 305px;
+    left: 544.9px;  
+    visibility: hidden;
+}
+
+#box3-2>h4{
+    font-size: 20px;
+}
+
+#box3-3{
+    position: absolute;
+    top: 370px;
+    left: 470px; 
+    visibility: hidden;
+}
+
+#box3-3>p{
+    text-align: right;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+#box3-4{
+    position: absolute;
+    top: 570px;
+    left: 150px;
+    visibility: hidden;
+}
+
+#box3-4>h1{
+    line-height: 60px;
+}
+
+#box3-5{
+    position: absolute;
+    top: 740px;
+    left: 150px;
+    line-height: 18px;
+    visibility: hidden;
+}
+
+#box3-6{
+    position: absolute;
+    top: 1000px;
+    left: 150px;
+    line-height: 55px;
+    visibility: hidden;
+}
+
+#box3-7{
+    position: absolute;
+    top: 1200px;
+    width: 800px;
+    height: 200px;
+    visibility: hidden;
+}
+
+#box3-7 > img{
+    position: absolute;
+    left: 150px;
+    width: 250px;
+    height: 240px;
+}
+
+#box3-7-1{
+    position: absolute;
+    top: 40px;
+    left: 440px;
+    font-size: 20px;
+}
+
+#box3-7-2{
+    position: absolute;
+    top: 110px;
+    left: 440px;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+#box3-8{
+    position: absolute;
+    top: 1460px;
+    width: 800px;
+    height: 200px;
+    visibility: hidden;
+}
+
+#box3-8 > img{
+    position: absolute;
+    left: 480px;
+    width: 250px;
+    height: 240px;
+}
+
+#box3-8-1{
+    position: absolute;
+    left: 300px;
+    top: 15px;
+    font-size: 20px;
+    text-align: right;
+    line-height: 25px;
+}
+
+#box3-8-2{
+    position: absolute;
+    left: 280px;
+    top: 110px;
+    font-size: 16px;
+    text-align: right;
+    line-height: 18px;
+}
+
+#box3-9{
+    position: absolute;
+    top: 1740px;
+    left: 240px;
+    font-size: 18px;
+    text-align: center;
+    color: rgb(53, 168, 105);
+    visibility : hidden;
+}
+
+#box3-10{
+    position: absolute;
+    top: 1860px;
+    left: 220px;
+    height: 100px;
+    visibility : hidden;
+}
+
+#box3-10 > img{
+    /* width: 250px;
+    height: 50px; */
+}
+
+#box3-10-1{
+    /* visibility: visible; */
+}
+
+#box3-10-1:hover{
+    /* transform: scale(1.1, 1.1); */
+    cursor: pointer;
+}
+
+#picG1-3{
+    position: absolute;
+    top: 8px;
+    left: 650px;
+    z-index: -1;
+}
+
+#picG1-3>img{
+    width: 180px;
+    height: 180px;
+}
+
+#picG2-3{
+    position: absolute;
+    top: 135px;
+    left: 670px;
+    visibility: hidden;
+}
+
+#picG2-3>img{
+    width: 50px;
+    height: 80px;
+}
+
+#picG3-3{
+    position: absolute;
+    top: 170px;
+    left: -240px;
+}
+
+#picG3-3>img{
+    width: 800px;
+    height: 360px;
+}
+
+#picG4-3{
+    position: absolute;
+    top: 630px;
+    left: 320px;
+    visibility: hidden;
+}
+
+#picG4-3>img{
+    width: 500px;
+    height: 300px;
+}
+
+#picG5-3{
+    position: absolute;
+    top: 1000px;
+    left: 550px;
+    visibility: hidden;
+}
+
+#picG5-3>img{
+    width: 250px;
+    height: 250px;
+}
+
+/* bio */
+
+#bioInFor > img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
 
 #box4-1{
     position: absolute;
@@ -926,186 +1537,24 @@ red{
     height: 100px;
 }
 
+/* RefInfor */
+#refimg1_windmill{
+}
 
-/* solar */
-
-#solarInFor > img{
+#refimg2_leaf1>img{
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: -1;
-}
-
-/* bio */
-
-#bioInFor > img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: -1;
-}
-
-#box2-1{
-    position: absolute;
-    top: 145px;
-    left: 500px;
-
-}
-
-#box2-1 > h1{
-    font-size: 44px;
-}
-
-#box2-2{
-    position: absolute;
-    top: 200px;
-    left: 577.9px;
-}
-
-#box2-2 >h4{
-    font-size: 20px;
-}
-
-#box2-3{
-    position: absolute;
-    top: 263px;
-    left: 490px;
-    text-align: right;
-    line-height: 20px;
-    font-size: 14px;
-    line-height: 17px;
-}
-
-#box2-4{
-    position: absolute;
-    top: 583px;
-    left: 290px;
-}
-
-#box2-4>h1{
-    font-size: 58px;
-    text-align: center;
-    line-height: 75px;
-}
-
-#box2-5{
-    position: absolute;
-    top: 790px;
-    left: 340px;
-    text-align: center;
-    line-height: 20px;
-}
-
-#box2-6{
-    position: absolute;
-    top: 1100px;
-    left: 130px;
-}
-
-#box2-7{
-    position: absolute;
-    top: 1230px;
-    width: 800px;
-    height: 200px;
-}
-
-#box2-7 > img{
-    position: absolute;
-    width: 250px;
-    height: 240px;
-    left: 130px;
-}
-
-#box2-7-1{
-    position: absolute;
-    top: 30px;
-    left: 410px;
-    line-height: 22px;
-}
-
-#box2-7-2{
-    position: absolute;
-    top: 120px;
-    left: 410px;
-    line-height: 20px;
-}
-
-#box2-8{
-    position: absolute;
-    top: 1530px;
-    width: 800px;
-    height: 200px;
-}
-
-#box2-8 > img{
-    position: absolute;
-    left: 440px;
-    width: 250px;
-    height: 240px;
-}
-
-#box2-8-1{
-    position: absolute;
-    top: 20px;
-    left: 280px;
-    text-align: right;
-    line-height: 22px;
-}
-
-#box2-8-2{
-    position: absolute;
-    left: 195px;
-    text-align: right;
-    top: 110px;
-    line-height: 20px;
-}
-
-#box2-9{
-    position: absolute;
-    top: 1830px;
-    left: 240px;
-    font-size: 18px;
-    text-align: center;
-    color: rgb(53, 168, 105);
-    /* visibility : visible; */
-}
-
-#box2-10{
-    position: absolute;
-    /* top: 1950px;
-    left: 290px; */
-}
-
-#box2-10 > img{
-    /* width: 250px;
-    height: 50px; */
-}
-
-#box2-10-1:hover{
-    transform: scale(1.1, 1.1);
-    cursor: pointer;
-}
-
-#picG1-2{
-    position: absolute;
-    top: 50px;
-    left: 650px;
-}
-
-#picG1-2 > img{
-    width: 60px;
+    width: 100px;
     height: 100px;
+    transform: rotate3d(-1, 0.2, 0, 3rad);
+    top: 460px;
+    left: 5%px;
 }
 
-#picG2-2{
+#refimg2_leaf2>img{
     position: absolute;
-    top: 740px;
-    left: 460px;
-}
-
-#picG2-2 > img{
-    width: 430px;
-    height: 210px;
+    width: 250px;
+    height: 250px;
+    transform: rotate3d(0, 0.7, 0.25, 3rad);
+    top: 900px;
+    right: 0;
 }

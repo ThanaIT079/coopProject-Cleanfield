@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="mainx.css">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="animation.css">
 
     <link rel="shortcut icon" href="img/000home/web-icon.png" />
     <!-- <link href="https://fonts.googleapis.com/css2?family=Mitr&display=swap" rel="stylesheet"> -->
@@ -21,7 +22,6 @@
 </head>
 
 <body onload="onStartpage()">
-    <!-- onStartpage() -->
     <!-- Homepage -->
     <div id="homepage">
         <div id="hplogo"></div>
@@ -116,24 +116,24 @@
         <div id="water"></div>
         <div id="solar"></div>
         <div id="bio"></div>
-
+        
 
         <!-- Button : Press to open Popup  func. openEl here-->
-        <div id="btnwind" class="btn" onclick="openEl(0);">
+        <div id="btnwind" class="btn" onclick="openEl(0)">
             <p class="btnvill1">พลังงานลม</p>
         </div>
-        <div id="btnwater" class="btn" onclick="openEl(1);">
+        <div id="btnwater" class="btn" onclick="openEl(1)">
             <p class="btnvill1">พลังงานน้ำ</p>
         </div>
-        <div id="btnsolar" class="btn" onclick="openEl(2);">
+        <div id="btnsolar" class="btn" onclick="openEl(2)">
             <p class="btnvill3">พลังงานเเสงอาทิตย์</p>
         </div>
-        <div id="btnbio" class="btn" onclick="openEl(3);">
+        <div id="btnbio" class="btn" onclick="openEl(3)">
             <p class="btnvill2">พลังงานชีวมวล</p>
         </div>
 
         <!-- How to play-->
-        <div id="how2" class="detialPh2">
+        <div id="how2" class="detialPh2" onscroll="showEL1(5);">
             <div id="closehow2" class="btn" onclick="closeEl()"></div>
             <div id="cthow2_1">
                 <p class="ch2txt1">วิธีสร้างเเหล่ง</p>
@@ -171,7 +171,8 @@
         <div id="refInFor" class="detialPref">
             <!-- <div id="closehow2" class="btn" onclick="closeEl()"></div> -->
             <div id="refimg1_windmill"></div>
-            <div id="refimg2_leaf"></div>
+            <div id="refimg2_leaf1"><img src="image/wind/l2.png" alt=""></div>
+            <div id="refimg2_leaf2"><img src="image/wind/l2.png" alt=""></div>
             <div id="refimg3_light"></div>
             <div id="ctref1_1">
                 <p class="ch2txt1">ติดตั้ง</p>
@@ -217,7 +218,7 @@
                 </p>
             </div>
 
-            <div id="btnref" class="btn" onclick="closeEl(); gotostart()">
+            <div id="btnref" class="btn" onclick="closeEl(); gotostart(); clearRef()">
                 <p class="cftxt5">กลับสู่จุดเริ่มต้น</p>
             </div>
             <div class="freespace2"></div>
@@ -225,7 +226,7 @@
 
         <!-- Information Prototype -->
         <div id="windInFor" class="detialP" onclick="closeEl()" onscroll="showEL1(0);">
-            <img src="image/wind-bg.png" alt="">
+            <img src="image/wind/wind-bg.png" alt="">
             <div id="box1-1" class="boxText">
                 <h1>พลังงานลม</h1>
                 <h4>วิ่งรับลม หมุนพลังงาน</h4>
@@ -240,17 +241,18 @@
             </div>
             <div id="box1-4">
                 <div id="box1-4-1">
-                    <img src="image/lightbulb.gif" alt="">
+                    <img src="image/wind/lightbulb.gif" alt="">
                     <p>เครื่องใช้ไฟฟ้าต่าง ๆ<br>
                         ในครัวเรือน</p>
                 </div>
                 <div id="box1-4-2">
-                    <img src="image/seed.gif" alt="">
+                    <img src="image/wind/seed.gif" alt="">
                     <p>เครื่องสีเมล็ดธัญพืช<br>
                         สำหรับเกษตรกร</p>
                 </div>
                 <div id="box1-4-3">
-                    <img src="image/waterturbine.gif" alt="">
+                    <div id="fixGIF_box1-4-3"></div>
+                    <!-- <img src="image/wind/waterturbine.gif" alt=""> -->
                     <p>เครื่องปั๊มน้ำสำหรับ<br>
                         ใช้ในบ้านและการเกษตร</p>
                 </div>
@@ -259,7 +261,7 @@
                 <h1>กังหันลม</h1>
             </div>
             <div id="box1-6">
-                <img src="image/1.png" alt="">
+                <img src="image/wind/1.png" alt="">
                 <div>
                     <h4 class="head2Topic">ริมหาด<br>แหลมพรหมเทพ</h4>
                     <p>จังหวัดภูเก็ต ไฟฟ้าที่ผลิตได้นำ<br>
@@ -268,7 +270,7 @@
                 </div>
             </div>
             <div id="box1-7">
-                <img src="image/2.png" alt="">
+                <img src="image/wind/2.png" alt="">
                 <div>
                     <h4 class="head2Topic">&emsp;&emsp;&emsp;&emsp;&emsp;เขาลำตะคอง</h4>
                     <p>&emsp;จังหวัดนครรราชสีมา เป็น<br>
@@ -288,11 +290,59 @@
                 </div>
             </div>
             <div id="picG1">
-                <img src="image/windmill.gif" alt="">
+                <img src="image/wind/windmill.gif" alt="">
             </div>
             <div id="picG2">
             </div>
             <div id="picG3">
+            </div>
+
+            <div id="picG4">
+                <img src="image/wind/icon(1).png" alt="">
+            </div>
+            <div id="picG5">
+                <img src="image/wind/l2.png" alt="">
+            </div>
+            <div id="picG6">
+                <img src="image/wind/l1.png" alt="">
+            </div>
+            <div id="picG7">
+                <img src="image/wind/l2.png" alt="">
+            </div>
+            <div id="picG8">
+                <img src="image/wind/l2.png" alt="">
+            </div>
+            <!-- aaa -->
+            <div id="picG9">
+                <img src="image/wind/l2.png" alt="">
+            </div>
+            <div id="picG10">
+                <img src="image/wind/l1.png" alt="">
+            </div>
+            <div id="picG11">
+                <img src="image/wind/l1.png" alt="">
+            </div>
+            <div id="picG12">
+                <img src="image/wind/l2.png" alt="">
+            </div>
+            <div id="picG13">
+                <img src="image/wind/l1.png" alt="">
+            </div>
+            <div id="picG14">
+                <img src="image/wind/l2.png" alt="">
+            </div>
+            <!-- aaa -->
+            <div id="picG15">
+                <img src="image/wind/l2.png" alt="">
+            </div>
+            <div id="picG16">
+                <img src="image/wind/l2.png" alt="">
+            </div>
+            <div id="picG17">
+                <img src="image/wind/l2.png" alt="">
+            </div>
+            <div id="picG18">
+                <img src="image/wind/l2.png" alt="">
             </div>
         </div>
 
@@ -359,13 +409,13 @@
                 <h2>พลังงานน้ำถูกเรียนรู้แล้ว<br>
                     นำไปพัฒนาหมู่บ้าน ติดตั้งได้เลย!</h2>
             </div>
+    
             <div id="box2-10" onclick="applyPower(1); closeEl()">
                 <img id="box2-10-1" src="" alt="">
                 <div id="btnwaters" class="btn">
                     <p class="btnset2">ติดตั้งพลังงานน้ำ</p>
                 </div>
             </div>
-
             <div class="freespacewater"></div>
 
             <div id="picG1-2">
@@ -375,18 +425,91 @@
                 <img src="image/water/Fan.gif" alt="">
             </div>
             <div id="picG3-2">
-
+                <img src="image/water/pot.GIF" alt="">
             </div>
         </div>
 
         <div id="solarInFor" class="detialP" onclick="closeEl()" onscroll="showEL1(2);">
             <img src="image/solar/bg-01.png" alt="">
-
-            <div id="box3-x" onclick="applyPower(2); closeEl()">
-                <img id="box2-10-1" src="" alt="">
+            <div id="box3-1" class="boxText">
+                <h1>พลังงาน<br>แสงอาทิตย์</h1>
+            </div>
+            <div id="box3-2" class="boxText">
+                <h4>อาบแดด เก็บพลังงาน</h4>
+            </div>
+            <div id="box3-3">
+                <p>
+                    หมู่บ้านฟ้าโปร่ง เหมาะแก่การรับแสงอาทิตย์<br>
+                    โซลาร์เซลล์วางเรียงยาว ไร้มลพิษให้ความร้อน<br>
+                    ให้ไฟฟ้าเป็นแสงสว่างในยามมืด
+                </p>
+            </div>
+            <div id="box3-4" class="boxHead">
+                <h1>หลังคาบ้าน<br>ลดค่าใช้จ่าย</h1>
+            </div>
+            <div id="box3-5">
+                <p>
+                    สามารถผลิตได้ 2000w ต่อวัน<br>
+                    หรือ เท่ากับการเปิดพัดลมต่อเนื่องกัน<br>
+                    40 ชม. ช่วยประหยัดได้ เดือนละ<br>
+                    1,336.5 บาท ( 16,038 บาท/ปี)
+                </p>
+            </div>
+            <div id="box3-6" class="boxHead">
+                <h1>หมู่บ้านพลังงาน<br>แสงอาทิตย์</h1>
+            </div>
+            <div id="box3-7">
+                <img src="image/solar/sun1.png" alt="">
+                <div id="box3-7-1" class="boxHead">
+                    <h4>หมู่บ้าน เปร็ดใน</h4>
+                </div>
+                <div id="box3-7-2">
+                    <p>ใช้ไฟฟ้าสร้างน้ำประปา<br>
+                        ภายในหมู่บ้าน<br>
+                        ลดค่าใช้จ่ายไปได้ถึง<br>
+                        2000-3000 บาท/เดือน
+                        </p>
+                </div>
+            </div>
+            <div id="box3-8">
+                <img src="image/solar/sun2.png" alt="">
+                <div id="box3-8-1" class="boxHead">
+                    <h4>หมู่บ้าน<br>Sena Park Ville</h4>
+                </div>
+                <div id="box3-8-2">
+                    <p>หมู่บ้านในเมืองที่<br>
+                        ใช้พลังงานแสงอาทิตย์<br>
+                        โดยติดให้กับทุกบ้านช่วย<br>
+                        ลดค่าส่วนกลางถึง 40%</p>
+                </div>
+            </div>
+            <div id="box3-9">
+                <h2>พลังงานแสงอาทิตย์ถูกเรียนรู้แล้ว<br>
+                    นำไปพัฒนาหมู่บ้าน ติดตั้งได้เลย!</h2>
+            </div>
+            <div id="box3-10" onclick="applyPower(2); closeEl()">
+                <img id="box3-10-1" src="" alt="">
                 <div id="btnsolars" class="btn">
                     <p class="btnset3">ติดตั้งพลังงานเเสงอาทิตย์</p>
                 </div>
+            </div>
+
+            <div class="freespacesolar"></div>
+            
+            <div id="picG1-3">
+                <img src="image/solar/sunn.gif" alt="">
+            </div>
+            <div id="picG2-3">
+                <img src="image/solar/sunicon_0.png" alt="">
+            </div>
+            <div id="picG3-3">
+                <img src="image/solar/lll.gif" alt="">
+            </div>
+            <div id="picG4-3">
+                <img src="image/solar/Fan.gif" alt="">
+            </div>
+            <div id="picG5-3">
+                <img src="image/solar/sunn.gif" alt="">
             </div>
 
         </div>
@@ -539,7 +662,7 @@
                 <h2>พลังงานชีวมวลถูกเรียนรู้แล้ว<br>
                     นำไปพัฒนาหมู่บ้าน ติดตั้งได้เลย!</h2>
             </div>
-            
+
             <div id="box4-17" onclick="applyPower(3); closeEl()">
                 <img id="box4-17-1" src="" alt="">
                 <div id="btnbios" class="btn">

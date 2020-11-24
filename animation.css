@@ -1,0 +1,66 @@
+
+@keyframes fadeInR-leaf1{
+    0%{
+        transform: rotate3d(1, -.5, 0, 3rad);
+        opacity: 0;
+    }
+    100%{
+        transform: rotate3d(1, -.8, 0, 3rad);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInR-leaf3{
+    0%{
+        transform: scaleX(-.5);
+        opacity: 0;
+    }
+    100%{
+        transform: scaleX(-1);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn-pic9{
+    0%{
+        /* transform: rotate3d(0.7, 1, 0, 3rad); */
+        top: 810px;
+        opacity: 0;
+    }
+    100%{
+        /* transform: rotate3d(0.7, 1, 0, 3rad); */
+        top: 820px;
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn-pic10{
+    0%{
+        left: 70px;
+        opacity: 0;
+    }
+    100%{
+        left: 80px;
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn-pic15{
+    0%{
+        left: 660px;
+        opacity: 0;
+    }
+    100%{
+        left: 650px;
+        opacity: 1;
+    }
+}
+
+@keyframes scaleUpStrove{
+    0%{transform: scaleX(1);
+        transform: scaleY(1)} 
+    50%{transform: scaleX(1.1);
+        transform: scaleY(1.1);}
+    100%{transform: scaleX(1);
+        transform: scaleY(1)}
+}
